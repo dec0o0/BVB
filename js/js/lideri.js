@@ -8,22 +8,24 @@ function getLideri() {
   var prezbiter = "Prezbiter";
   var diacon = "Diacon";
   return [
+    new Lider("Cristian Vasile Roske", "Pastor onorific"),
     new Lider("Emil Meștereagă", "Pastor senior"),
     new Lider("Ciprian Terinte", "Pastor asistent"),
     new Lider("Adrian Jurj", "Pastor asistent"),
     new Lider("Dragoș Ștefănică", prezbiter),
     new Lider("Daniel Epure", prezbiter),
     new Lider("Titi Piftor", prezbiter),
+    new Lider("Nicolae Văduva", prezbiter),
     new Lider("Cristian Dragomir", diacon),
     new Lider("Dumitru Piscuc", diacon),
     new Lider("Alin Pănican", diacon),
-    new Lider("Nicolae Văduva", diacon)
+    new Lider("Marian Mănescu", diacon)
   ];
 }
 
 function adaugaLideri() {
   var ultimaPositie = null;
-  var liderSection = document.getElementById('afisajConducere');
+  var liderSection = document.getElementById('conducerePlaceHolder');
   var lideri = getLideri();
   for(var i = 0; i < lideri.length; ++i) {
     var l = lideri[i];

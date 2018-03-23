@@ -18,6 +18,10 @@
 		vertical-align: baseline;
 	}
 
+	button.button {
+		font-size: 100%;
+	}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -1712,7 +1716,7 @@
 	header p {
 		color: #a7a7a7;
 		letter-spacing: 0.11em;
-		position: relative;
+		position: relative; /* OVERLAY FIX 1 DIMU */
 		margin: 0 0 1.5em 0;
 	}
 
