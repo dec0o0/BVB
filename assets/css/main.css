@@ -2776,7 +2776,7 @@
 
 	#banner {
 		padding: 11em 0 8em 0 ;
-		/*background-attachment: scroll, fixed;*/
+		background-attachment: scroll, fixed;
 		background-image: url("images/overlay.png"), url("../../images/_/tvb.jpg");
 		background-position: center center;
 		background-size: cover;
