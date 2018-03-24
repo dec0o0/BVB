@@ -83,20 +83,64 @@
             <div class="dialog__content">
                 <div class="morph-shape">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 560 280" preserveAspectRatio="none">
-											<rect x="3" y="3" fill="none" width="556" height="276"/>
+											<rect x="2" y="2" fill="none" width="556" height="276"/>
 										</svg>
                 </div>
                 <div class="dialog-inner">
-                    <h3><strong>Evenimente</strong> programate</h3>
-                    <a href="#" class="dialog__close icon fa-times" data-dialog-close><span class="label">Închide</span></a>
+                    <h3>Evenimentele bisericii locale</h3>
+                    <a href="#" class="dialog__close icon fa-times fa-lg" data-dialog-close><span class="label">Închide</span></a>
 
-                    <sub><i>Treceți cursorul peste una din zile pentru a afișa evenimentele doar din ziua respectivă. Pentru a reveni la ziua curentă, click <a href="#">aici</a>.</i></sub>
+                    <div class="calendarEvenimente clearfix">
+                        <script type="text/template" id="calendarEvenimente-template">
+                            <div class="clndr-controls">
+                                <div class="clndr-previous-button">&lt;</div>
+                                <div class="clndr-next-button">&gt;</div>
+                                <div class="current-month">
+                                    <%= month %>
+                                        <%= year %>
+                                </div>
 
-                    <sub><i>Treceți cursorul peste una din zile pentru a afișa evenimentele doar din ziua respectivă. Pentru a reveni la ziua curentă, click <a href="#">aici</a>.</i></sub>
+                            </div>
+                            <div class="clndr-grid">
+                                <div class="days-of-the-week clearfix">
+                                    <% _.each(daysOfTheWeek, function(day) { %>
+                                        <div class="header-day">
+                                            <%= day %>
+                                        </div>
+                                        <% }); %>
+                                </div>
+                                <div class="days">
+                                    <% _.each(days, function(day) { %>
+                                        <div class="<%= day.classes %>" id="<%= day.id %>"><span class="day-number"><%= day.day %></span></div>
+                                        <% }); %>
+                                </div>
+                            </div>
+                            <div class="event-listing">
 
-                    <sub><i>Treceți cursorul peste una din zile pentru a afișa evenimentele doar din ziua respectivă. Pentru a reveni la ziua curentă, click <a href="#">aici</a>.</i></sub>
-
-                    <sub><i>Treceți cursorul peste una din zile pentru a afișa evenimentele doar din ziua respectivă. Pentru a reveni la ziua curentă, click <a href="#">aici</a>.</i></sub>
+                                <!--<sub class="clndr-today-button">Today</sub>-->
+                                <div class="event-listing-title">ÎN LUNA ACEASTA</div>
+                                <div class="event-item">
+                                    <div class="event-item-name">
+                                        Slujbe săptămânale
+                                    </div>
+                                    <div class="event-item-location">
+                                        Marți, Joi, Duminică
+                                    </div>
+                                </div>
+                                <% _.each(eventsThisMonth, function(event) { 
+																	if(event.saptamanal) return;%>
+                                    <div class="event-item">
+                                        <div class="event-item-name">
+                                            <%= event.title %>
+                                        </div>
+                                        <div class="event-item-location">
+                                            <%= event.description %>
+                                        </div>
+                                    </div>
+                                    <% }); %>
+                            </div>
+                        </script>
+                    </div>
 
                     <sub><i>Treceți cursorul peste una din zile pentru a afișa evenimentele doar din ziua respectivă. Pentru a reveni la ziua curentă, click <a href="#">aici</a>.</i></sub>
                 </div>
@@ -114,80 +158,6 @@
                             <h2>Ultimul anunț</h2>
                             <p>Conducerea bisericii</p>
                         </header>
-
-
-
-
-
-
-
-
-                        <div class="calendarEvenimente clearfix">
-                            <script type="text/template" id="calendarEvenimente-template">
-                                <div class="clndr-controls">
-                                    <div class="clndr-previous-button">&lt;</div>
-                                    <div class="clndr-next-button">&gt;</div>
-                                    <div class="current-month">
-                                        <%= month %>
-                                            <%= year %>
-                                    </div>
-
-                                </div>
-                                <div class="clndr-grid">
-                                    <div class="days-of-the-week clearfix">
-                                        <% _.each(daysOfTheWeek, function(day) { %>
-                                            <div class="header-day">
-                                                <%= day %>
-                                            </div>
-                                            <% }); %>
-                                    </div>
-                                    <div class="days">
-                                        <% _.each(days, function(day) { %>
-                                            <div class="<%= day.classes %>" id="<%= day.id %>"><span class="day-number"><%= day.day %></span></div>
-                                            <% }); %>
-                                    </div>
-                                </div>
-                                <div class="event-listing">
-
-                                    <!--<sub class="clndr-today-button">Today</sub>-->
-                                    <div class="event-listing-title">ÎN LUNA ACEASTA</div>
-                                    <div class="event-item">
-                                        <div class="event-item-name">
-                                            Slujbe săptămânale
-                                        </div>
-                                        <div class="event-item-location">
-                                            Marți, Joi, Duminică
-                                        </div>
-                                    </div>
-                                    <% _.each(eventsThisMonth, function(event) { 
-																			if(event.saptamanal) return;%>
-                                        <div class="event-item">
-                                            <div class="event-item-name">
-                                                <%= event.title %>
-                                            </div>
-                                            <div class="event-item-location">
-                                                <%= event.description %>
-                                            </div>
-                                        </div>
-                                        <% }); %>
-                                </div>
-                            </script>
-                        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quisgravida id, est. Sed lectuisto. Praesent lorem ipsum dolor sit amet blandit
                             elementum hendrerit dolor sit amet feugiat. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing.</p>
                         <ul class="actions">

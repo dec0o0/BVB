@@ -36,7 +36,7 @@
     width: 75%;
     max-width: 860px;
     min-width: 290px;
-    background: #faf;
+    background: #fff;
     padding: 4em;
     text-align: center;
     position: relative;
@@ -50,8 +50,13 @@
 
 .dialog__close {
     position: absolute;
-    top: 0px;
+    top: 7px;
     right: 7px;
+}
+
+.dialog__close:hover {
+    border: 1px blue;
+    border-radius: 100%;
 }
 
 body.modal-open {

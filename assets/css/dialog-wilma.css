@@ -9,7 +9,7 @@
 }
 
 .dialog__content {
-    padding: 0;
+    padding: 0px 1px 1px 0px;
     background: transparent;
 }
 
@@ -39,22 +39,27 @@
 
 .dialog-inner {
     opacity: 0;
-    background: brown;
+    background: white;
 }
 
 .dialog--open .dialog-inner {
-    padding: 4em;
+    padding: 2em 4em;
     opacity: 1;
     -webkit-transition: opacity 0.85s 0.35s;
     transition: opacity 0.85s 0.35s;
 }
 
-.dialog.dialog--open h2 {
+.dialog.dialog--open h3 {
     -webkit-animation: anim-elem-1 0.7s ease-out both;
     animation: anim-elem-1 0.7s ease-out both;
 }
 
 .dialog.dialog--open a.dialog__close {
+    -webkit-animation: anim-elem-2 0.7s ease-out both;
+    animation: anim-elem-2 0.7s ease-out both;
+}
+
+.dialog.dialog--open .calendarEvenimente {
     -webkit-animation: anim-elem-2 0.7s ease-out both;
     animation: anim-elem-2 0.7s ease-out both;
 }
