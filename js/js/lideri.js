@@ -23,7 +23,7 @@ function getLideri() {
   ];
 }
 
-function adaugaLideri() {
+(function adaugaLideri () {
   var ultimaPositie = null;
   var liderSection = document.getElementById('conducerePlaceHolder');
   var lideri = getLideri();
@@ -45,6 +45,4 @@ function adaugaLideri() {
         </a>';
     } else throw "Bad type";
   }
-};
-
-adaugaLideri();
+}());
