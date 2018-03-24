@@ -52,11 +52,11 @@
     position: absolute;
     top: 7px;
     right: 7px;
+    opacity: .777;
 }
 
 .dialog__close:hover {
-    border: 1px blue;
-    border-radius: 100%;
+    opacity: 1;
 }
 
 body.modal-open {

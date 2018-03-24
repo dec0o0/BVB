@@ -95,7 +95,7 @@ $(document).ready(function() {
             startDate: 'startDate'
         },
         showAdjacentMonths: true,
-        adjacentDaysChangeMonth: false,
+        adjacentDaysChangeMonth: true,
         forceSixRows: true,
         clickEvents: {
             click: onDayClick,
