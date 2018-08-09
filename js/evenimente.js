@@ -1,5 +1,6 @@
 var exposedCalendar = {};
-var slujbeAdaugateInLunile = []
+var slujbeAdaugateInLunile = [];
+var thisMoment;
 
 function getKeyForMomemnt(mom) {
     return mom.year() + '' + mom.month();
@@ -28,7 +29,12 @@ const EVENIMENTE_SAPTAMANALE = {
 }
 
 function onDayClick(target) {
-    console.log(target);
+    //target.events[0].hClass = 'highlighted';
+    //exposedCalendar.instance.render();
+}
+
+function backToToday() {
+    exposedCalendar.instance.today();
 }
 
 function generateSlujeFor(startMoment) {
@@ -60,29 +66,35 @@ function onMonthChange(target) {
 $(document).ready(function() {
 
     moment.locale("ro");
-    var thisMonth = moment().format("YYYY-MM");
+    thisMoment = moment();
+    var thisMonth = thisMoment.format("YYYY-MM");
 
     var eventArray = [{
         title: 'Evanghelizare',
         endDate: thisMonth + '-14',
         startDate: thisMonth + '-10',
-        description: 'Pentru necredinciosi'
+        time: "13:30",
+        description: 'Pentru suflet'
     }, {
         endDate: thisMonth + '-23',
         startDate: thisMonth + '-21',
         title: 'Conferinta tineret',
-        description: 'Mult asteptata'
+        time: "13:30",
+        description: 'Tema este "Vitalitatea sufleteasca"'
     }, {
         date: thisMonth + '-27',
         title: 'Miercuri',
-        description: 'Speram ca nu va ninge'
+        time: "13:30",
+        description: 'Intalnirea surorilor'
     }, {
         date: '2018-05-27',
         title: 'Nuntă Dinu și Simona',
+        time: "13:30",
         description: 'Radauti'
     }, {
         date: '2018-04-17',
         title: 'Joi',
+        time: "13:30",
         description: 'Joy'
     }];
 
@@ -106,5 +118,4 @@ $(document).ready(function() {
             endDate: moment().add(1, 'y').format('YYYY-MM-DD')
         }
     });
-
 });

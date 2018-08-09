@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-	Gravity by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
--->
 <html>
 
 <head>
@@ -17,14 +12,6 @@
     <meta name="keywords" content="expanding button, morph, modal, fullscreen, transition, ui" />
     <meta name="author" content="Vestea Buna" />
 
-    <!-- common styles remove ?-->
-    <link rel="stylesheet" type="text/css" href="assets/css/dialog.css" />
-    <!-- individual effect cool -->
-    <link rel="stylesheet" type="text/css" href="assets/css/dialog-wilma.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/calendar.css" />
-
-    <script src="js/modernizr.custom.js"></script>
-
 </head>
 
 <body class="landing">
@@ -36,6 +23,8 @@
         <nav id="nav">
             <ul>
                 <li><a href="#">Anunțuri</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Consiliere</a></li>
                 <li>
                     <a href="#">Biserica locală</a>
                     <ul>
@@ -51,7 +40,6 @@
                                 <li><a href="#">Misiune</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Contact</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Resurse</a>
@@ -61,6 +49,7 @@
                         <li><a href="#">Arhivă video</a></li>
                     </ul>
                 </li>
+                <li><a href="#">Contact</a></li>
                 <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg" target="_blank" class="button alt">Transmisie live</a>
                 </li>
             </ul>
@@ -75,77 +64,6 @@
             <li class="button-wrap"><button href="#" class="button special trigger" data-dialog="somedialog">Evenimente</button></li>
         </ul>
 
-    </section>
-
-    <section class="style1">
-        <div id="somedialog" class="dialog">
-            <div class="dialog__overlay"></div>
-            <div class="dialog__content">
-                <div class="morph-shape">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 560 280" preserveAspectRatio="none">
-											<rect x="2" y="2" fill="none" width="556" height="276"/>
-										</svg>
-                </div>
-                <div class="dialog-inner">
-                    <h3>Evenimente</h3>
-                    <a href="#" class="dialog__close icon fa-times fa-lg" data-dialog-close><span class="label">Închide</span></a>
-
-                    <div class="calendarEvenimente clearfix">
-                        <script type="text/template" id="calendarEvenimente-template">
-                            <div class="clndr-controls">
-                                <div class="clndr-previous-button">&lt;</div>
-                                <div class="clndr-next-button">&gt;</div>
-                                <div class="current-month">
-                                    <%= month %>
-                                        <%= year %>
-                                </div>
-
-                            </div>
-                            <div class="clndr-grid">
-                                <div class="days-of-the-week clearfix">
-                                    <% _.each(daysOfTheWeek, function(day) { %>
-                                        <div class="header-day">
-                                            <%= day %>
-                                        </div>
-                                        <% }); %>
-                                </div>
-                                <div class="days">
-                                    <% _.each(days, function(day) { %>
-                                        <div class="<%= day.classes %>" id="<%= day.id %>"><span class="day-number"><%= day.day %></span></div>
-                                        <% }); %>
-                                </div>
-                            </div>
-                            <div class="event-listing">
-
-                                <!--<sub class="clndr-today-button">Today</sub>-->
-                                <div class="event-listing-title">ÎN LUNA ACEASTA</div>
-                                <div class="event-item">
-                                    <div class="event-item-name">
-                                        Slujbe săptămânale
-                                    </div>
-                                    <div class="event-item-location">
-                                        Marți, Joi, Duminică
-                                    </div>
-                                </div>
-                                <% _.each(eventsThisMonth, function(event) { 
-																	if(event.saptamanal) return;%>
-                                    <div class="event-item">
-                                        <div class="event-item-name">
-                                            <%= event.title %>
-                                        </div>
-                                        <div class="event-item-location">
-                                            <%= event.description %>
-                                        </div>
-                                    </div>
-                                    <% }); %>
-                            </div>
-                        </script>
-                    </div>
-
-                    <sub><i>Faceți click pe una din zile pentru a afișa evenimentele doar din ziua respectivă. Pentru a reveni la luna curentă, click <a href="#">aici</a>.</i></sub>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- One -->
@@ -266,25 +184,6 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/dialogFx.js"></script>
-    <script src="js/evenimente.js"></script>
-    <script src="js/underscore.js"></script>
-    <script src="js/moment.js"></script>
-    <!-- CLEAN UP LOCALES -->
-    <script src="js/calendar.js"></script>
-    <script>
-        (function() {
-
-            var dlgtrigger = document.querySelector('[data-dialog]'),
-                somedialog = document.getElementById(dlgtrigger.getAttribute('data-dialog')),
-                dlg = new DialogFx(somedialog);
-
-
-            dlgtrigger.addEventListener('click', dlg.toggle.bind(dlg));
-
-        })();
-    </script>
 
 </body>
 
