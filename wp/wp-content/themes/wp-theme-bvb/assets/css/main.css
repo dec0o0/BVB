@@ -1,14 +1,12 @@
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
 /*
-Theme Name: BVB
-Theme URI: http://wordpress.org/themes/twentythirteen
-Author: the WordPress team
-Author URI: http://wordpress.org/
-Description: Beginner
-Version: 1.0
+	Gravity by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
 */
 
-@import url("assets/css/font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 
 /* Reset */
 
@@ -2756,7 +2754,7 @@ body.landing .dropotron.level-0:before {
 #banner {
     padding: 11em 0 8em 0;
     background-attachment: scroll, fixed;
-    background-image: url("assets/css/images/overlay.png"), url("assets/images/_/tvb.jpg");
+    background-image: url("images/overlay.png"), url("../../images/_/tvb.jpg");
     background-position: center center;
     background-size: cover;
     line-height: 2;

@@ -1,0 +1,164 @@
+.clearfix {
+    display: block;
+}
+
+.highlighted {
+    background-color: yellow;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.header-day {
+    display: inline-block;
+}
+
+.calendarEvenimente {
+    width: 100%;
+    background-color: #ebebeb;
+    font-weight: 700;
+    -moz-box-shadow: 0px 4px 0 darken(red, 15%);
+    -webkit-box-shadow: 0px 4px 0 darken(red, 15%);
+    box-shadow: 0px 4px 0 darken(red, 15%);
+}
+
+.clndr-controls {
+    padding: 0px 5px;
+    /*background-color: white;
+    text-align: center;
+    */
+}
+
+.clndr-controls .inactive {
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.clndr-previous-button {
+    float: left;
+    text-align: left;
+}
+
+.clndr-next-button {
+    float: right;
+    text-align: right;
+}
+
+.clndr-previous-button,
+.clndr-next-button {
+    width: 30px;
+    cursor: pointer;
+}
+
+.clndr-previous-button:hover,
+.clndr-next-button:hover {
+    opacity: .5;
+}
+
+.clndr-grid {
+    float: left;
+    width: 65%;
+    border-right: 2px solid white;
+}
+
+.days-of-the-week {
+    width: 100%;
+    background-color: #3883a3;
+}
+
+.days-of-the-week .header-day {
+    float: left;
+    width: 14.2857%;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.days {
+    width: 100%;
+}
+
+.day,
+.empty {
+    float: left;
+    width: 14.2857%;
+    line-height: 70px;
+    text-align: center;
+    color: #4f4f4f;
+    background-color: #ebebeb;
+    border-bottom: 2px solid white;
+    background-image: url('./triangle.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.event {
+    cursor: pointer;
+}
+
+.event .day-number {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #3883a3;
+}
+
+.day .day-number {
+    vertical-align: middle;
+}
+
+.today {
+    background-color: white;
+    background-image: none;
+}
+
+.adjacent-month .day-number {
+    opacity: 0.3;
+}
+
+.event-listing {
+    float: left;
+    width: 35%;
+    text-align: left;
+}
+
+.event-listing-title {
+    padding: 5px;
+    background-color: #4fc2cd;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.event-item {
+    padding: 5px 10px;
+    color: #4f4f4f;
+}
+
+.event-item-detail {
+    font-weight: 400;
+}
+
+.event-item-detail>span {
+    display: block;
+    margin: -5px 0px 0px;
+}
+
+@media all and (max-width: 768px) {
+    .clndr-grid {
+        width: 100%;
+        border: none;
+    }
+    .event-listing {
+        display: none;
+    }
+}
+
+.white {
+    background-color: whitesmoke !important;
+}

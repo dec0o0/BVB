@@ -1,14 +1,15 @@
-<?php get_header(); ?>
-
+<?php get_header('landing'); ?>
+ 
     <!-- Banner -->
     <section id="banner">
         <h2>Isus Hristos</h2>
         <p>Ne leagă, ne adună, datorită lui zâmbim.</p>
         <ul class="actions">
-            <li class="button-wrap"><button href="#" class="button special trigger" data-dialog="somedialog">Evenimente</button></li>
+            <li class="button-wrap"><button href="#" class="button special trigger">Evenimente</button></li>
         </ul>
 
     </section>
+
 
     <!-- One -->
     <section id="one" class="wrapper style1">
@@ -28,7 +29,7 @@
                     </div>
                     <div class="4u$ 12u$(medium) important(medium)">
                         <span class="image fit rounded">
-									<img src="images/_/grain.jpg" alt="" />
+									<img src="<?php echo get_template_directory_uri() . '/assets/images/_/grain.jpg'; ?>" alt="" />
 								</span>
                     </div>
                 </div>
@@ -37,7 +38,7 @@
                 <div class="row 200%">
                     <div class="4u 12u$(medium)">
                         <span class="image fit rounded">
-									<img src="images/_/Mity_p.jpg" alt="" class="rounded" />
+									<img src="<?php echo get_template_directory_uri() . '/assets/images/_/Mity_p.jpg'; ?>" alt="" class="rounded" />
 								</span>
                     </div>
                     <div class="8u$ 12u$(medium)">
@@ -72,4 +73,6 @@
         </div>
     </section>
 
+
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
