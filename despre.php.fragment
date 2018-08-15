@@ -1,0 +1,75 @@
+<!-- Main -->
+<section id="main">
+    <div class="container">
+        <header class="major">
+            <h2>Despre Biserica Vestea Bună</h2>
+            <p>Începuturi și direcții</p>
+        </header>
+        <div class="row 200%">
+            <div class="6u 12u$(medium)">
+                <!-- Sidebar -->
+                <section id="sidebar">
+                    <section>
+                        <h3>Misiunea bisericii</h3>
+                        <p>Biserica Creştină „Vestea Bună” îşi propune să-L glorifice pe Dumnezeu prin aducerea oamenilor într-o relaţie personală şi profundă cu Isus Hristos.</p>
+                    </section>
+
+                    <img class="image fit" src="[asset url='images/mission.svg'" />
+
+                    <hr />
+                    <section>
+                        <h3>Valorile bisericii</h3>
+                        <ol>
+                            <li>Comuniunea cu Dumnezeu</li>
+                            <li>Legătura cu alți credincioși</li>
+                            <li>Influenţa asupra celor nemântuiţi</li>
+                        </ol>
+                    </section>
+                    <hr/>
+                    <section>
+                        <h3>Strategia bisericii</h3>
+                        <p>Strategia noastră constă în crearea unor contexte, în care oamenii să aibă comuniune cu Dumnezeu, legătură cu alți credincioşi, influență asupra semenilor nemântuiți.
+                        </p>
+                        <p>
+                            <h6>Comuniunea cu Dumnezeu constă în:</h6>
+                            <ul>
+                                <li>
+                                    Închinare</li>
+                                <li>
+                                    Învățătură biblică</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <h6>Legătura dintre credincioși constă în:</h6>
+                            <ul>
+                                <li>
+                                    Socializare
+                                </li>
+                                <li>Ajutor reciproc</li>
+                                <li>
+                                    Echipare spirituală</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <h6>
+                                Influența asupra celor nemântuiți constă în:</h6>
+                            <ul>
+                                <li>
+                                    Relații constructive cu oameni nemântuiți</li>
+                                <li>
+                                    Întruniri ecleziale în cadrul cărora Evanghelia să fie prezentată ca soluție la problemele ființei umane.</li>
+                            </ul>
+                        </p>
+                    </section>
+                </section>
+
+            </div>
+            <div class="6u$ 12u$(medium) important(medium)">
+
+                <!-- Content -->
+                <section id="content">
+
+            </div>
+        </div>
+    </div>
+    </section>
