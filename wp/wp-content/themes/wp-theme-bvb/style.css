@@ -3532,3 +3532,7 @@ body.is-touch .poptrox-popup .closer {
 .content-like {
     font-size: 1.1em;
 }
+
+.withPadding {
+    padding: 0px 15px;
+}
