@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="copyright">
-            &copy; Vestea Buna Bucuresti. Toate drepturile rezervate.
+            &copy; Vestea Bună București.
         </div>
     </div>
 

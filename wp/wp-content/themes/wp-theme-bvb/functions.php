@@ -1,6 +1,7 @@
 <?php
 
 remove_filter( 'the_content', 'wpautop' );
+add_theme_support( 'post-thumbnails' ); 
 
 function getAssetURL( $atts ){
   $attrs = shortcode_atts(
