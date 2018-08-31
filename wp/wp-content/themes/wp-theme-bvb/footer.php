@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="copyright">
-            &copy; Vestea Bună București.
+            &copy; Vestea Bună București
         </div>
     </div>
 

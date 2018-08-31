@@ -10,26 +10,35 @@
 
     </section>
 
-
     <!-- One -->
     <section id="one" class="wrapper style1">
         <div class="container">
             <section class="feature">
                 <div class="row 200%">
                     <div class="8u 12u$(medium)">
+                        <?php $args = array(
+                            'post_type' => 'post' ,
+                            'orderby' => 'date' ,
+                            'order' => 'DESC' ,
+                            'cat' => '2',
+                            'posts_per_page' => 1,
+                            'post_parent' => $parent
+                        ); 
+                        $q = new WP_Query($args);
+                        $q->the_post() ?>
                         <header class="major">
-                            <h2>Ultimul anunț</h2>
-                            <p>Conducerea bisericii</p>
+                            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                            <p>Ultimul anunț, adăugat în data de <?php the_date(); ?></p>
                         </header>
-                        <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quisgravida id, est. Sed lectuisto. Praesent lorem ipsum dolor sit amet blandit
-                            elementum hendrerit dolor sit amet feugiat. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing.</p>
+                        <p><?php the_excerpt(); ?></p>
                         <ul class="actions">
-                            <li><a href="#" class="button alt">Ultimele anunțuri</a></li>
+                            <li><a href="<?php the_permalink(); ?>" class="button">Continuă lectura</a></li>
+                            <li><a href="<?php echo home_url(); ?>/anunturi" class="button alt">Vezi toate anunțurile</a></li>
                         </ul>
                     </div>
                     <div class="4u$ 12u$(medium) important(medium)">
                         <span class="image fit rounded">
-									<img src="<?php echo get_template_directory_uri() . '/assets/images/_/grain.jpg'; ?>" alt="" />
+                        <img src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="" />
 								</span>
                     </div>
                 </div>
@@ -37,19 +46,29 @@
             <section class="feature">
                 <div class="row 200%">
                     <div class="4u 12u$(medium)">
+                    <?php $args = array(
+                            'post_type' => 'post' ,
+                            'orderby' => 'date' ,
+                            'order' => 'DESC' ,
+                            'cat' => '3',
+                            'posts_per_page' => 1,
+                            'post_parent' => $parent
+                        ); 
+                        $q = new WP_Query($args);
+                        $q->the_post() ?>
                         <span class="image fit rounded">
-									<img src="<?php echo get_template_directory_uri() . '/assets/images/_/Mity_p.jpg'; ?>" alt="" class="rounded" />
+                        <img src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="" />
 								</span>
                     </div>
                     <div class="8u$ 12u$(medium)">
                         <header class="major">
-                            <h2>Ultimul articol</h2>
-                            <p>Piscuc Dumitru</p>
+                            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                            <p>Ultimul articol, adăugat în data de <?php the_date(); ?></p>
                         </header>
-                        <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quisgravida id, est. Sed lectuisto. Praesent lorem ipsum dolor sit amet blandit
-                            elementum hendrerit dolor sit amet feugiat. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero faucibus ...</p>
+                        <p><?php the_excerpt(); ?></p>
                         <ul class="actions">
-                            <li><a href="#" class="button alt">Citeste tot</a></li>
+                            <li><a href="<?php the_permalink(); ?>" class="button">Continuă lectura</a></li>
+                            <li><a href="<?php echo home_url(); ?>/articol" class="button alt">Vezi toate articolele</a></li>
                         </ul>
                     </div>
                 </div>
@@ -67,12 +86,12 @@
             <p>Adipiscing orci felis. Blandit metus morbi. Adipiscing amet vis blandit. Vestibulum id ac enim nascetur ante adipiscing. Col vestibulum ac fusce lacinia nisi ante adipiscing amet ante tempus at faucibus. Adipiscing ante arcu nullam amet ante
                 ac semper accumsan. Lacinia non integer ac praesent mi porttitor adipiscing vitae id praesent.</p>
             <ul class="actions">
-                <li><a href="#" class="button special">Consiliere</a></li>
-                <li><a href="#" class="button alt">Rugăciune</a></li>
+                <li><a href="#" class="button special">Contact</a></li>
+                <li><a href="#" class="button alt">Consiliere</a></li>
             </ul>
         </div>
     </section>
 
-
+<?php wp_reset_postdata();?>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

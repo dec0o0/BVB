@@ -13,7 +13,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
     <div class="container">
         <header class="major">
             <h2><?php the_title();?></h2>
-            <p><?php the_author();?></p>
+            <p><?php the_author();?>, <?php the_date();?><br/></span></p>
         </header>
         <div class="row 200%">
         <div class="4u 12u$(medium)">

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--
+	Gravity by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+
+<head>
+    <title>Contact :: BVB</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/form.css" >
+    <script src="/assets/js/form.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+	<!--<link rel="stylesheet" href="assets/css/contact.css" />-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header">
+        <h1 id="logo"><a href="index.html">BVB</a></h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="#">Anunțuri</a></li>
+                <li>
+                    <a href="#">Biserica locală</a>
+                    <ul>
+                        <li><a href="despre.html">Despre</a></li>
+                        <li><a href="conducere.html">Conducere</a></li>
+                        <li>
+                            <a href="departamente.html">Departamente</a>
+                            <ul>
+                                <li><a href="#">Școala duminicală</a></li>
+                                <li><a href="#">Tineret</a></li>
+                                <li><a href="#">Laudă și închinare</a></li>
+                                <li><a href="#">Cor mixt</a></li>
+                                <li><a href="#">Misiune</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Resurse</a>
+                    <ul>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Link-uri utile</a></li>
+                        <li><a href="#">Arhivă video</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg" target="_blank" class="button alt">Transmisie live</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main -->
+    <section id="main">
+        <div class = "container">
+            <header class="major">
+                <h2>Contact</h2>
+                <p>Locul unde ne poți găsi</p>
+            </header>
+			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'>
+			</script>
+			<div class="contmap" style='overflow:hidden;height:550px;width:100%;'>
+				<div id='gmap_canvas' style='height:100%;width:100%;'>
+			</div>
+				<div>
+					<small><a href="http://embedgooglemaps.com">									embed google maps							</a>
+					</small>
+				</div>
+				<div>
+					<small><a href="http://freedirectorysubmissionsites.com/">free web directories</a>
+					</small>
+				</div>
+					<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+				</div>
+				<script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(44.431592, 26.125900),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(44.431592, 26.125900)});infowindow = new google.maps.InfoWindow({content:'<strong>Biserica Vestea Buna</strong><br>Bucuresti<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+				</script>
+	
+		<div class="content">
+			<section class="section1">
+				<div class="sec1title">
+					<h3 style = "display: contents;">La adresa se poate ajunge cu metroul pana la Piata Unirii si de acolo tramvaiul 40 sau 56 cu capatul la Sfanta Vineri.</h3>
+				</div>	
+			</section>
+		</div>
+		
+			<div class="container1">
+            <div class="form-container">
+                <h1>
+                    Ne poti scrie!
+                </h1>
+                <form method="post" id="reused_form" >
+                    <label for="name">Numele:</label>
+                    <input id="name" type="text" name="Name" required maxlength="50">
+                    <label for="email">Adresa Email:</label>
+                    <input id="email" type="email" name="Email" required maxlength="50">
+                    <label for="message">Mesajul:</label>
+                    <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
+                    <button id ="button" class="button-primary" type="submit" >Trimite</button>
+                </form>
+                <div id="success_message" style="display:none">
+                    <h3>Mesaj trimis!</h3> 
+                    <p> Revenim cu un raspuns cat de curand posibil. </p>
+                </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Eroare!</h3> Eroare de trimitere a mesajului. </div>
+            </div>
+        </div>
+
+	
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="row 200% uniform">
+                <section class="4u 12u$(medium) 12u$(small)">
+                    <header class="major">
+                        <h3>About</h3>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aliquam eius dolorem quod deserunt esse libero, dolorum temporibus, aliquid nemo vitae sit enim quas ipsam dicta et veritatis excepturi suscipit. Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit. Odio incidunt, tempora quasi, impedit laudantium totam magna consequat.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button alt">Learn more</a></li>
+                    </ul>
+                </section>
+                <section class="4u 6u(medium) 12u$(small)">
+                    <header class="major">
+                        <h3>Recent News</h3>
+                    </header>
+                    <ul class="updates">
+                        <li>
+                            <p>
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatem voluptas provident illum vitae ad, placeat ipsa, porro veritatis.</a>
+                            </p>
+                            <span class="timestamp">4 hours ago</span>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">Veniam consectetur, fuga recusandae id voluptate obcaecati illo nisi atque aliquid facilis tempore, magni soluta sequi dicta reiciendis minima.</a>
+                            </p>
+                            <span class="timestamp">4 hours ago</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="4u$ 6u$(medium) 12u$(small)">
+                    <header class="major">
+                        <h3>Contact</h3>
+                    </header>
+                    <ul class="labeled-icons">
+                        <li>
+                            <h4 class="icon fa-envelope"><span class="label">Email</span></h4>
+                            <a href="#">someone@untitled.tld</a>
+                        </li>
+                        <li>
+                            <h4 class="icon fa-phone"><span class="label">Phone</span></h4>
+                            (000) 000-0000 x12345
+                        </li>
+                        <li>
+                            <h4 class="icon fa-home"><span class="label">Address</span></h4>
+                            1234 Somewhere Road, Suite #543<br>Nashville, TN 00000
+                        </li>
+                        <li>
+                            <h4 class="icon fa-twitter"><span class="label">Twitter</span></h4>
+                            <a href="#">twitter.com/untitled</a>
+                        </li>
+                        <li>
+                            <h4 class="icon fa-facebook"><span class="label">Facebook</span></h4>
+                            <a href="#">facebook.com/untitled</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Untitled. All rights reserved.
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.onvisible.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+	<!--<script>
+        (function() {
+
+            var dlgtrigger = document.querySelector('[data-dialog]'),
+                somedialog = document.getElementById(dlgtrigger.getAttribute('data-dialog')),
+                dlg = new DialogFx(somedialog);
+
+
+            dlgtrigger.addEventListener('click', dlg.toggle.bind(dlg));
+
+        })();
+    </script>-->
+</body>
+
+</html>

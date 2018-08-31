@@ -21,8 +21,8 @@ $q = new WP_Query($args); ?>
  <section id="main">
     <div class="container">
         <header class="major">
-            <h2>Blog</h2>
-            <p>Vă invităm să luați parte cu noi la toate</p>
+            <h2>Articole</h2>
+            <p>Încondeieri pentru suflet</p>
         </header>
 </div></section>
 <section id="one">
@@ -36,12 +36,12 @@ $q = new WP_Query($args); ?>
                 <div class="row 200%">
                     <div class="8u 12u$(medium)">
                         <header class="major">
-                            <h2><?php the_title(); ?></h2>
+                        <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
                             <p><i class="icon fa-pencil"></i> De <?php the_author(); ?>, în <?php the_date(); ?></p>
-     </header>
+                        </header>
                         <p><?php the_excerpt();?></p>
                         <ul class="actions">
-                            <li><a href="<?php the_permalink();?>" class="button alt">Citește tot</a></li>
+                            <li><a href="<?php the_permalink();?>" class="button alt">Continuă lectura</a></li>
                         </ul>
                     </div>
                     <div class="4u$ 12u$(medium) important(medium)">
