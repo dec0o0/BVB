@@ -5,7 +5,7 @@
         <h2>Isus Hristos</h2>
         <p>Ne leagă, ne adună, datorită lui zâmbim.</p>
         <ul class="actions">
-            <li class="button-wrap"><button href="#" class="button special trigger">Evenimente</button></li>
+            <li class="button-wrap"><button href="#" class="button special trigger">Servicii divine</button></li>
         </ul>
 
     </section>
@@ -80,14 +80,16 @@
     <section id="four" class="wrapper style1 special">
         <div class="container">
             <header class="major">
-                <h2>Scurt mesaj de bun venit</h2>
-                <p>Din partea unui pastor</p>
+                <h2>Cine suntem?</h2>
+                <p>Vino să vezi</p>
             </header>
-            <p>Adipiscing orci felis. Blandit metus morbi. Adipiscing amet vis blandit. Vestibulum id ac enim nascetur ante adipiscing. Col vestibulum ac fusce lacinia nisi ante adipiscing amet ante tempus at faucibus. Adipiscing ante arcu nullam amet ante
-                ac semper accumsan. Lacinia non integer ac praesent mi porttitor adipiscing vitae id praesent.</p>
+            <p>Vă spunem bun venit pe site-ul bisericii „Vestea Bună” Bucureşti</p>
+            <p>Vă suntem alături prin intermediul serviciilor divine redate în flux live, împreună cu alte informaţii utile ce vizează comunitatea creştină 
+Sunt oferite servicii de consiliere creştină, alături de suportul social necesar
+Vă aşteptăm să participaţi alături de noi la părtăşia spirituală duhovnicească.</p>
             <ul class="actions">
-                <li><a href="#" class="button special">Contact</a></li>
-                <li><a href="#" class="button alt">Consiliere</a></li>
+                <li><a href="#" class="button special">Detalii contact</a></li>
+                <li><a href="#" class="button alt">Departamente</a></li>
             </ul>
         </div>
     </section>

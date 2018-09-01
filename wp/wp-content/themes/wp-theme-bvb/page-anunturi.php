@@ -22,7 +22,7 @@ $q = new WP_Query($args); ?>
     <div class="container">
         <header class="major">
             <h2>Anunțuri</h2>
-            <p>Privitoare la biserica locală și evenimente de interes</p>
+            <p>Și evenimente</p>
         </header>
 </div></section>
 <section id="one">

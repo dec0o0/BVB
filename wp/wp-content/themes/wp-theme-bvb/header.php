@@ -24,18 +24,17 @@
                 <li><a href="<?php echo home_url(); ?>/blog">Articole</a></li>
                 <li><a href="<?php echo home_url(); ?>/consiliere">Consiliere</a></li>
                 <li>
-                    <a href="#">Biserica locală</a>
+                    <a href="<?php echo home_url(); ?>/viziune">Biserica locală</a>
                     <ul>
-                        <li><a href="<?php echo home_url(); ?>/despre">Despre</a></li>
+                        <li><a href="<?php echo home_url(); ?>/viziune">Viziune</a></li>
                         <li><a href="<?php echo home_url(); ?>/conducere">Conducere</a></li>
                         <li>
-                            <a href="departamente.html">Departamente</a>
+                            <a href="<?php echo home_url(); ?>/departamente">Departamente</a>
                             <ul>
-                                <li><a href="<?php echo home_url(); ?>/misiune">Misiune</a></li>
-                                <li><a href="#">Școala duminicală</a></li>
-                                <li><a href="#">Tineret</a></li>
-                                <li><a href="#">Laudă și închinare</a></li>
-                                <li><a href="#">Cor mixt</a></li>
+                                <li><a href="#">Închinare</a></li>
+                                <li><a href="<?php echo home_url(); ?>/misiune">Misiune & evanghelizare</a></li>
+                                <li><a href="#">Acțiuni sociale</a></li>
+                                <li><a href="#">Copii, adolescenți, tineret</a></li>
                             </ul>
                         </li>
                     </ul>
