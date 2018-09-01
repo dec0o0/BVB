@@ -5,7 +5,7 @@
         <h2>Isus Hristos</h2>
         <p>Ne leagă, ne adună, datorită lui zâmbim.</p>
         <ul class="actions">
-            <li class="button-wrap"><button href="#" class="button special trigger">Servicii divine</button></li>
+            <li class="button-wrap"><button href="#" class="button special trigger">Program săptămânal</button></li>
         </ul>
 
     </section>
