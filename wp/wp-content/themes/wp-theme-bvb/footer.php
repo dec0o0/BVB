@@ -1,4 +1,92 @@
 
+
+    <section class="style1">
+        <div id="somedialog" class="dialog">
+            <div class="dialog__overlay"></div>
+            <div class="dialog__content">
+                <div class="morph-shape">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 560 280" preserveAspectRatio="none">
+                                                <rect x="2" y="2" fill="none" width="556" height="276"/>
+                                            </svg>
+                </div>
+                <div class="dialog-inner">
+                    <h3>Programul
+                        <select name="category" id="program" onchange="scheduleChange(this)">
+                                <option value="s">SĂPTĂMÂNAL</option>
+                                <option value="l">LUNAR</option>
+                            </select></h3>
+                    <a href="#" class="dialog__close icon fa-times fa-lg" data-dialog-close><span class="label">Închide</span></a>
+                    <br/>
+                    <div class="table-wrapper" id="programSaptamanal">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Ziua săptămânii</th>
+                                    <th>Eveniment</th>
+                                    <th>Ora începerii</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan=" 2 ">Duminică</td>
+                                    <td>Slujba de dimineața</td>
+                                    <td>10:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Slujba de seară</td>
+                                    <td>18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Marți</td>
+                                    <td>Seară de rugăciune</td>
+                                    <td>18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Miercuri</td>
+                                    <td>Întâlnirea adolescenților</td>
+                                    <td>18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Joi</td>
+                                    <td>Întâlnire de la mijlocul săptămânii</td>
+                                    <td>18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Vineri</td>
+                                    <td>Întâlnirea grupurilor de tineri</td>
+                                    <td>18:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-wrapper hidden" id="programLunar">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Eveniment</th>
+                                    <th>Periodicitate</th>
+                                    <th>Oră începere</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Întâlnirea familiilor</td>
+                                    <td>În ultima vineri a lunii</td>
+                                    <td>18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Întâlnirea surorilor</td>
+                                    <td>În prima sâmbătă a lunii</td>
+                                    <td>18:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <div id="footer">
         <div class="container">
@@ -55,6 +143,18 @@
     <script src="<?php echo get_template_directory_uri() . '/assets/js/jquery.poptrox.min.js'; ?>"></script>
     <script src="<?php echo get_template_directory_uri() . '/assets/js/util.js'; ?>"></script>
     <script src="<?php echo get_template_directory_uri() . '/assets/js/main.js'; ?>"></script>
+    <script src="<?php echo get_template_directory_uri() . '/assets/js/classie.js'?>"></script>
+    <script src="<?php echo get_template_directory_uri() . '/assets/js/modernizr.custom.js'?>"></script>
+    <script src="<?php echo get_template_directory_uri() . '/assets/js/dialogFx.js'?>"></script>
+
+    <script>
+        (function() {
+            var dlgtrigger = document.querySelector('[data-dialog]'),
+                somedialog = document.getElementById(dlgtrigger.getAttribute('data-dialog')),
+                dlg = new DialogFx(somedialog);
+            dlgtrigger.addEventListener('click', dlg.toggle.bind(dlg));
+        })();
+    </script>
     <!--[if lte IE 8]><script src="<?php echo get_template_directory_uri() . '/assets/js/ie/respond.min.js'; ?>"></script><![endif]-->
     
 

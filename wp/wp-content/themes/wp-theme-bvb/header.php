@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet" media="all" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/assets/css/dialog.css'?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/assets/css/dialog-wilma.css'?>" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <meta name="description" content="Site-ul bisericii Biserica Vestea Buna din Bucuresti" />
     <meta name="keywords" content="expanding button, morph, modal, fullscreen, transition, ui" />
@@ -48,7 +50,8 @@
                 </li>
                 <li><a href="<?php echo home_url(); ?>/contact">Contact</a></li>
                 <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg" target="_blank" class="button alt">Transmisie live</a>
-                <li><a href="" id="friendlyRead" class="icon fa-toggle-off"></a>
+                <li><a href="" class="icon fa-calendar normalSized" data-dialog="somedialog"></a></li>
+                <li><a href="" id="friendlyRead" class="icon fa-toggle-off normalSized"></a>
                 </li>
             </ul>
         </nav>

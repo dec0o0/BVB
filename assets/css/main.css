@@ -3520,3 +3520,13 @@ body.is-touch .poptrox-popup .closer {
         width: 10em;
     }
 }
+
+#program {
+    display: inline-block;
+    max-width: 150px;
+    margin-bottom: .3em;
+}
+
+.hidden {
+    display: none;
+}

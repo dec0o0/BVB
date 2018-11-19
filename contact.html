@@ -7,16 +7,11 @@
 <html>
 
 <head>
-    <title>Contact :: BVB</title>
+    <title>Departamente :: BVB</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" >
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/css/form.css" >
-    <script src="/assets/js/form.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
-	<!--<link rel="stylesheet" href="assets/css/contact.css" />-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 
@@ -43,7 +38,7 @@
                                 <li><a href="#">Misiune</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Resurse</a>
@@ -61,60 +56,64 @@
 
     <!-- Main -->
     <section id="main">
-        <div class = "container">
+        <div class="container">
             <header class="major">
                 <h2>Contact</h2>
                 <p>Locul unde ne poți găsi</p>
             </header>
-			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'>
-			</script>
-			<div class="contmap" style='overflow:hidden;height:550px;width:100%;'>
-				<div id='gmap_canvas' style='height:100%;width:100%;'>
-			</div>
-				<div>
-					<small><a href="http://embedgooglemaps.com">									embed google maps							</a>
-					</small>
-				</div>
-				<div>
-					<small><a href="http://freedirectorysubmissionsites.com/">free web directories</a>
-					</small>
-				</div>
-					<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-				</div>
-				<script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(44.431592, 26.125900),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(44.431592, 26.125900)});infowindow = new google.maps.InfoWindow({content:'<strong>Biserica Vestea Buna</strong><br>Bucuresti<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
-				</script>
-	
-		<div class="content">
-			<section class="section1">
-				<div class="sec1title">
-					<h3 style = "display: contents;">La adresa se poate ajunge cu metroul pana la Piata Unirii si de acolo tramvaiul 40 sau 56 cu capatul la Sfanta Vineri.</h3>
-				</div>	
-			</section>
-		</div>
-		
-			<div class="container1">
-            <div class="form-container">
-                <h1>
-                    Ne poti scrie!
-                </h1>
-                <form method="post" id="reused_form" >
-                    <label for="name">Numele:</label>
-                    <input id="name" type="text" name="Name" required maxlength="50">
-                    <label for="email">Adresa Email:</label>
-                    <input id="email" type="email" name="Email" required maxlength="50">
-                    <label for="message">Mesajul:</label>
-                    <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
-                    <button id ="button" class="button-primary" type="submit" >Trimite</button>
-                </form>
-                <div id="success_message" style="display:none">
-                    <h3>Mesaj trimis!</h3> 
-                    <p> Revenim cu un raspuns cat de curand posibil. </p>
-                </div>
-                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Eroare!</h3> Eroare de trimitere a mesajului. </div>
-            </div>
-        </div>
+            <div class="row 200%">
+                <div class="6u 12u$(medium)">
 
-	
+                    <!-- Sidebar -->
+                    <section id="sidebar">
+                        <section>
+                            <iframe style="border-radius: 4px" width="500" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUzsXHkCxhQhOfsbmTgkACRjP7_42uf3I
+							    &q=Biserica+Vestea+buna,Bucharest" allowfullscreen>
+							</iframe>
+                            <br/>
+                            <p>La adresa se poate ajunge cel mai ușor cu metroul până la Piața Unirii, iar de acolo puteți lua tramvaiul 40 sau 56 de la Sfânta Vineri până la stația Hyperion. De acolo, biserica se află la două minute de mers pe jos, pe strada
+                                Popa Nan. Vă așteptăm!</p>
+                        </section>
+                    </section>
+
+                </div>
+                <div class="6u$ 12u$(medium) important(medium)">
+
+                    <!-- Content -->
+                    <section class="content">
+                        <h5>Ne puteți scrie oricând, folosind formularul de mai jos, sau ne puteți suna telefonând la numărul din josul paginii.</h5>
+
+                        <form method="post" action="#">
+                            <div class="row uniform 50%">
+                                <div class="12u 12u$(small)">
+                                    <input type="text" name="name" id="name" value="" placeholder="Nume" />
+                                </div>
+                                <div class="12u$ 12u$(small)">
+                                    <input type="email" name="email" id="email" value="" placeholder="Adresă de email" />
+                                </div>
+                                <div class="6u 12u$(medium)">
+                                    <input type="checkbox" id="copy" name="copy">
+                                    <label for="copy">Trimite-mi o copie a email-ului</label>
+                                </div>
+                                <div class="6u$ 12u$(medium)">
+                                    <input type="checkbox" id="human" name="human" checked>
+                                    <label for="human">Nu sunt robot</label>
+                                </div>
+                                <div class="12u$">
+                                    <textarea name="message" id="message" placeholder="Bună ziua, ...." rows="6"></textarea>
+                                </div>
+                                <div class="12u$">
+                                    <ul class="actions">
+                                        <li><input type="submit" value="Trimite mesajul" class="special" /></li>
+                                        <li><input type="reset" value="Resetează" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+
+                </div>
+            </div>
         </div>
     </section>
 
@@ -194,18 +193,7 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
-	<!--<script>
-        (function() {
 
-            var dlgtrigger = document.querySelector('[data-dialog]'),
-                somedialog = document.getElementById(dlgtrigger.getAttribute('data-dialog')),
-                dlg = new DialogFx(somedialog);
-
-
-            dlgtrigger.addEventListener('click', dlg.toggle.bind(dlg));
-
-        })();
-    </script>-->
 </body>
 
 </html>

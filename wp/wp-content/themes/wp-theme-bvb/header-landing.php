@@ -7,11 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet" media="all" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/assets/css/dialog.css'?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/assets/css/dialog-wilma.css'?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/assets/css/slidebase.css'?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/assets/css/pater.css'?>" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <meta name="description" content="Site-ul bisericii Biserica Vestea Buna din Bucuresti" />
-    <meta name="keywords" content="expanding button, morph, modal, fullscreen, transition, ui" />
+    <meta name="keywords" content="biserica, vestea, buna, vestea buna, bucuresti, penticostal, crestin, schimbare" />
     <meta name="author" content="Vestea Buna" />
-
+    <script>document.documentElement.className="js ";var supportsCssVars=function(){var e,t=document.createElement("style ");return t.innerHTML="root: { --tmp-var: bold; }
+        ",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight ","var(--tmp-var) ")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables. ");</script>
 </head>
 
 <body class="landing">

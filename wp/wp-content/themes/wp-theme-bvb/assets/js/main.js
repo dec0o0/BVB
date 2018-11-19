@@ -189,3 +189,8 @@ window.onscroll = function() {
     }
     prevScrollpos = currentScrollPos;
 }
+
+function scheduleChange(control) {
+    $("#programLunar").toggleClass("hidden");
+    $("#programSaptamanal").toggleClass("hidden");
+}
