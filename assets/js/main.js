@@ -169,6 +169,11 @@
 })(jQuery);
 
 function scheduleChange(control) {
-    $("#programLunar").toggleClass("hidden");
-    $("#programSaptamanal").toggleClass("hidden");
+    if (control == 's') {
+        $("#programSaptamanal").removeClass("hidden");
+        $("#programLunar").removeClass("hidden").addClass("hidden")
+    } else {
+        $("#programSaptamanal").removeClass("hidden").addClass("hidden");
+        $("#programLunar").removeClass("hidden");
+    }
 }

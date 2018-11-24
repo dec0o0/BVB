@@ -54,7 +54,7 @@
                     </ul>
                 </li>
                 <li><a href="<?php echo home_url(); ?>/contact">Contact</a></li>
-                <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg" target="_blank" class="button alt">Transmisie live</a>
+                <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg" target="_blank" class="button special">Transmisie live</a>
                 </li>
             </ul>
         </nav>

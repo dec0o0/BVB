@@ -172,6 +172,34 @@
     background: var(--color-slink-hover-bg);
 }
 
+#headerButtons {
+    background-color: #4fc2cd;
+    border-top: 1em #4fc2cd solid;
+}
+
+.arrowParent {
+    position: relative;
+}
+
+.arrowChild {
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    width: 0;
+    height: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.arrowChild.down {
+    border-top: 10px solid #4fc2cd;
+    bottom: -11px;
+}
+
 @media screen and (min-width: 55em) {
     .demos {
         display: flex;

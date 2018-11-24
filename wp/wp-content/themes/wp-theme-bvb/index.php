@@ -1,121 +1,149 @@
 <?php get_header('landing');?>
 
-    <section class="slideshow">
+
+<?php 
+$args = array(
+    'post_type' => 'post',
+    'orderby' => 'date',
+    'order' => 'DESC',
+    'cat' => '4',
+    'posts_per_page' => 5,
+    'post_parent' => $parent,
+);
+$q = new WP_Query($args);
+
+$slideTitles = array();
+$slideUrls = array();
+$slidePics = array();
+$slideSummary = array();
+$i = 0;
+while($q->have_posts()) {
+    $q->the_post();
+    $slidePics[$i] = get_the_post_thumbnail_url(get_the_ID(),'full');
+    $slideUrls[$i] = get_permalink();
+    $slideTitles[$i] = get_the_title();
+    $slideSummary[$i++] = get_the_excerpt();
+}
+$currentUrl = get_template_directory_uri();
+?>
+
+    <section>
+        <div class="slideshow">
         <div class="slides slides--images">
-            <div class="slide slide--current">
-                <div class="slide__img" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/css/images/overlay.png' ?>), url(http://ro.zooverresources.com/images/E58754L2B614902D0W900H675/Gent.jpg)"></div>
+            <?php for($i = 0; $i < count($slidePics); $i++) { 
+                if($i == 0) {?>
+                <div class="slide slide--current" href="<?php echo $slideUrls[$i] ?>">
+                <?php } else { ?>
+                    <div class="slide" href="<?php echo $slideUrls[$i] ?>">
+                <?php } ?>
+                <div class="slide__img" style="background-image: url(<?php echo $currentUrl . '/assets/css/images/overlay.png' ?>), url(<?php echo $slidePics[$i] ?>)"></div>
             </div>
-            <div class="slide">
-                <div class="slide__img" style="background-image: url(assets/css/images/overlay.png), url(http://ro.zooverresources.com/images/E58754L2B614902D0W900H675/Gent.jpg)"></div>
-            </div>
-            <div class="slide">
-                <div class="slide__img" style="background-image: url(assets/css/images/overlay.png), url(http://ro.zooverresources.com/images/E58754L2B614902D0W900H675/Gent.jpg)"></div>
-            </div>
-            <div class="slide">
-                <div class="slide__img" style="background-image: url(assets/css/images/overlay.png), url(http://ro.zooverresources.com/images/E58754L2B614902D0W900H675/Gent.jpg)"></div>
-            </div>
+                <?php
+            } ?>
         </div>
         <div class="slides slides--titles">
-            <div class="slide slide--current">
-                <h2 class="slide__title">Isus Hristos</h2>
-                <p>Ne vindeca</p>
+            <?php for($i = 0; $i < count($slideTitles); $i++) { 
+                if($i == 0) {?>
+                <div class="slide slide--current">
+                <?php } else { ?>
+                    <div class="slide">
+                <?php } ?>
+
+                <h2 class="slide__title"><?php echo $slideTitles[$i] ?></h2>
+                <p><?php echo $slideSummary[$i] ?></p>
             </div>
-            <div class="slide">
-                <h2 class="slide__title">Duhul Sfant</h2>
-                <p>Ne conduce</p>
-            </div>
-            <div class="slide">
-                <h2 class="slide__title">Design</h2>
-            </div>
-            <div class="slide">
-                <h2 class="slide__title">Create</h2>
-            </div>
-            <div class="slide">
-                <h2 class="slide__title">Invent</h2>
-            </div>
+                <?php
+            } ?>
         </div>
         <nav class="slidenav">
             <button class="slidenav__item slidenav__item--prev button"><span class="icon fa-chevron-left fa-lg"></span></button>
-            <button class="slidenav__item__like button"><span class="icon fa-search-plus fa-lg"></span></button>
+            <button class="slidenav__item__like button" onclick="visitCurrentSlide()"><span class="icon fa-search-plus fa-lg"></span></button>
             <button class="slidenav__item slidenav__item--next button"><span class="icon fa-chevron-right fa-lg"></span></button>
         </nav>
+        </div>
+        <div id="headerButtons">
+            <div class="container">
+                <div class="row">
+                    <div class="3u 6u(large) 12u$(medium)">
+                        <button class="button special small fit icon fa-clock-o" onclick="scheduleChange('s')">Programul săptămânal</a>
+                    </div>
+                    <div class="3u 6u(large) 12u$(medium)">
+                        <button class="button special small fit icon fa-calendar" onclick="scheduleChange('l')">Programul lunar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- Four -->
-    <section id="one" class="wrapper style1 special">
+    <section id="one" class="wrapper style1">
         <div class="container">
-            <header class="major">
-                <h2>Programul
-                        <select name="category" id="program" onchange="scheduleChange(this)">
-                                <option value="s">SĂPTĂMÂNAL</option>
-                                <option value="l">LUNAR</option>
-                            </select></h2>
-            </header>
-                    <div class="table-wrapper" id="programSaptamanal">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Ziua săptămânii</th>
-                                    <th>Eveniment</th>
-                                    <th>Ora începerii</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td rowspan=" 2 ">Duminică</td>
-                                    <td>Slujba de dimineața</td>
-                                    <td>10:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Slujba de seară</td>
-                                    <td>18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Marți</td>
-                                    <td>Seară de rugăciune</td>
-                                    <td>18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Miercuri</td>
-                                    <td>Întâlnirea adolescenților</td>
-                                    <td>18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Joi</td>
-                                    <td>Întâlnire de la mijlocul săptămânii</td>
-                                    <td>18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Vineri</td>
-                                    <td>Întâlnirea grupurilor de tineri</td>
-                                    <td>18:00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="table-wrapper hidden" id="programLunar">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Eveniment</th>
-                                    <th>Periodicitate</th>
-                                    <th>Oră începere</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Întâlnirea familiilor</td>
-                                    <td>În ultima vineri a lunii</td>
-                                    <td>18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Întâlnirea surorilor</td>
-                                    <td>În prima sâmbătă a lunii</td>
-                                    <td>18:00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            <div class="table-wrapper hidden" id="programSaptamanal">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><h3>Ziua săptămânii</h3></th>
+                            <th><h3>Eveniment</h3></th>
+                            <th><h3>Ora începerii</h3></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan=" 2 ">Duminică</td>
+                            <td>Slujba de dimineața</td>
+                            <td>10:00</td>
+                        </tr>
+                        <tr>
+                            <td>Slujba de seară</td>
+                            <td>18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Marți</td>
+                            <td>Seară de rugăciune</td>
+                            <td>18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Miercuri</td>
+                            <td>Întâlnirea adolescenților</td>
+                            <td>18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Joi</td>
+                            <td>Întâlnire de la mijlocul săptămânii</td>
+                            <td>18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Vineri</td>
+                            <td>Întâlnirea grupurilor de tineri</td>
+                            <td>18:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-wrapper hidden" id="programLunar">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><h3>Eveniment</h3></th>
+                            <th><h3>Periodicitate</h3></th>
+                            <th><h3>Ora începerii</h3></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Întâlnirea familiilor</td>
+                            <td>În ultima vineri a lunii</td>
+                            <td>18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Întâlnirea surorilor</td>
+                            <td>În prima sâmbătă a lunii</td>
+                            <td>18:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 

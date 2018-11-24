@@ -148,7 +148,7 @@
     <script src="<?php echo get_template_directory_uri() . '/assets/js/dialogFx.js'?>"></script>
     <script src="<?php echo get_template_directory_uri() . '/assets/js/slide/imagesloaded.pkgd.min.js' ?>"></script>
     <script src="<?php echo get_template_directory_uri() . '/assets/js/slide/anime.min.js' ?>"></script>
-    <script src="<?php echo get_template_directory_uri() . '/assets/js/slide/demo6.js' ?>"></script>
+    <script src="<?php echo get_template_directory_uri() . '/assets/js/slide/slideshow.js' ?>"></script>
 
     <script>
         (function() {
