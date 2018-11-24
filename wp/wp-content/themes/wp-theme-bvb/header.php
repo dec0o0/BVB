@@ -20,7 +20,7 @@
 <!-- Header -->
 <div id="header">
     <h1 id="logo"><a href="<?php echo home_url(); ?>" class="icon fa-lightbulb-o"> BVB</a></h1>
-    <<nav id="nav">
+    <nav id="nav">
             <ul>
             <li><a href="<?php echo home_url(); ?>/anunturi">Anunțuri</a></li>
                 <li><a href="<?php echo home_url(); ?>/blog">Articole</a></li>
@@ -33,6 +33,7 @@
                         <li>
                             <a href="<?php echo home_url(); ?>/departamente">Departamente</a>
                             <ul>
+                                <li><a href="<?php echo home_url(); ?>/departamente">Prezentare generală</a></li>
                                 <li><a href="#">Închinare</a></li>
                                 <li><a href="<?php echo home_url(); ?>/misiune">Misiune & evanghelizare</a></li>
                                 <li><a href="#">Acțiuni sociale</a></li>
@@ -41,17 +42,16 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="#">Resurse</a>
-                    <ul>
-                        <li><a href="#">Foto</a></li>
-                        <li><a href="<?php echo home_url(); ?>/recomandari">Recomandări</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg/videos">Arhivă video</a></li>
-                    </ul>
-                </li>
                 <li><a href="<?php echo home_url(); ?>/contact">Contact</a></li>
                 <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg" target="_blank" class="button alt">Transmisie live</a>
-                <li><a href="" class="icon fa-calendar normalSized" data-dialog="somedialog"></a></li>
+                <ul>
+                        <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg/videos">& Arhiva video</a></li>
+                    </ul>
+                </li>
                 <li><a href="" id="friendlyRead" class="icon fa-toggle-off normalSized"></a>
+                    <ul>
+                        <li>Comută modul citire</li>
+                    </ul>
                 </li>
             </ul>
         </nav>

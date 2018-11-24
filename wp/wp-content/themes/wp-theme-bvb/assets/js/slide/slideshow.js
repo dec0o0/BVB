@@ -9,7 +9,7 @@
  * http://www.codrops.com
  */
 {
-    const SLIDESHOW_INTERVAL = 17500;
+    const SLIDESHOW_INTERVAL = 7500;
     // From https://davidwalsh.name/javascript-debounce-function.
     function debounce(func, wait, immediate) {
         var timeout;
@@ -34,7 +34,7 @@
             this.settings = {
                 animation: {
                     slides: {
-                        duration: 500,
+                        duration: 600,
                         easing: 'easeOutQuint'
                     },
                     shape: {
@@ -42,16 +42,14 @@
                         easing: { in: 'easeOutQuint', out: 'easeOutQuad' }
                     }
                 },
-                frameFill: 'url(#gradient1)'
+                frameFill: '#f1f1f1'
             }
             this.init();
         }
         init() {
-            this.DOM.slides = Array.from(this.DOM.el.querySelectorAll('.slides--images > .slide'));
+            this.DOM.slides = Array.from(this.DOM.el.querySelectorAll('.slides > .slide'));
             this.slidesTotal = this.DOM.slides.length;
             this.DOM.nav = this.DOM.el.querySelector('.slidenav');
-            this.DOM.titles = this.DOM.el.querySelector('.slides--titles');
-            this.DOM.titlesSlides = Array.from(this.DOM.titles.querySelectorAll('.slide'));
             this.DOM.nextCtrl = this.DOM.nav.querySelector('.slidenav__item--next');
             this.DOM.prevCtrl = this.DOM.nav.querySelector('.slidenav__item--prev');
             this.current = 0;
@@ -60,7 +58,7 @@
         }
         createFrame() {
             this.rect = this.DOM.el.getBoundingClientRect();
-            this.frameSize = this.rect.width / 12;
+            this.frameSize = this.rect.width / 40;
             this.paths = {
                 initial: this.calculatePath('initial'),
                 final: this.calculatePath('final')
@@ -70,15 +68,8 @@
             this.DOM.svg.setAttribute('width', '100%');
             this.DOM.svg.setAttribute('height', '100%');
             this.DOM.svg.setAttribute('viewbox', `0 0 ${this.rect.width} ${this.rect.height}`);
-            this.DOM.svg.innerHTML = `
-            <defs>
-            <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#fff"/>
-                <stop offset="100%" stop-color="#4fc2cd"/>
-            </linearGradient>
-            </defs>
-            <path fill="${this.settings.frameFill}" d="${this.paths.initial}"/>`;
-            this.DOM.el.insertBefore(this.DOM.svg, this.DOM.titles);
+            this.DOM.svg.innerHTML = `<path fill="${this.settings.frameFill}" d="${this.paths.initial}"/>`;
+            this.DOM.el.insertBefore(this.DOM.svg, this.DOM.nav);
             this.DOM.shape = this.DOM.svg.querySelector('path');
         }
         updateFrame() {
@@ -88,21 +79,13 @@
             this.DOM.shape.setAttribute('d', this.isAnimating ? this.paths.final : this.paths.initial);
         }
         calculatePath(path = 'initial') {
-
-            if (path === 'initial') {
-                return `M 0,0 0,${this.rect.height} ${this.rect.width},${this.rect.height} ${this.rect.width},0 0,0 Z M 0,0 ${this.rect.width},0 ${this.rect.width},${this.rect.height} 0,${this.rect.height} Z`;
-            } else {
-                const point1 = { x: this.rect.width / 4 - 50, y: this.rect.height / 4 + 50 };
-                const point2 = { x: this.rect.width / 4 + 50, y: this.rect.height / 4 - 50 };
-                const point3 = { x: this.rect.width - point2.x, y: this.rect.height - point2.y };
-                const point4 = { x: this.rect.width - point1.x, y: this.rect.height - point1.y };
-
-                return `M 0,0 0,${this.rect.height} ${this.rect.width},${this.rect.height} ${this.rect.width},0 0,0 Z M ${point1.x},${point1.y} ${point2.x},${point2.y} ${point4.x},${point4.y} ${point3.x},${point3.y} Z`;
-            }
+            return path === 'initial' ?
+                `M 0,0 0,${this.rect.height} ${this.rect.width},${this.rect.height} ${this.rect.width},0 0,0 Z M 0,0 ${this.rect.width},0 ${this.rect.width},${this.rect.height} 0,${this.rect.height} Z` :
+                `M 0,0 0,${this.rect.height} ${this.rect.width},${this.rect.height} ${this.rect.width},0 0,0 Z M ${this.frameSize},${this.frameSize} ${this.rect.width-this.frameSize},${this.frameSize} ${this.rect.width-this.frameSize},${this.rect.height-this.frameSize} ${this.frameSize},${this.rect.height-this.frameSize} Z`;
         }
         initEvents() {
-            this.DOM.nextCtrl.addEventListener('click', () => this.navigateWithAutoplayReset('next'));
-            this.DOM.prevCtrl.addEventListener('click', () => this.navigateWithAutoplayReset('prev'));
+            this.DOM.nextCtrl.addEventListener('click', () => this.navigateWithTimerRest('next'));
+            this.DOM.prevCtrl.addEventListener('click', () => this.navigateWithTimerRest('prev'));
 
             window.addEventListener('resize', debounce(() => {
                 this.rect = this.DOM.el.getBoundingClientRect();
@@ -112,13 +95,14 @@
             document.addEventListener('keydown', (ev) => {
                 const keyCode = ev.keyCode || ev.which;
                 if (keyCode === 37) {
-                    this.navigateWithAutoplayReset('prev');
+                    this.navigateWithTimerRest('prev');
                 } else if (keyCode === 39) {
-                    this.navigateWithAutoplayReset('next');
+                    this.navigateWithTimerRest('next');
                 }
             });
         }
-        navigateWithAutoplayReset(dir = 'next') {
+
+        navigateWithTimerRest(dir = 'next') {
             this.navigate(dir);
             stopSlideshow();
             playSlideshow();
@@ -141,23 +125,9 @@
                         targets: currentSlide,
                         duration: this.settings.animation.slides.duration,
                         easing: this.settings.animation.slides.easing,
-                        translateY: dir === 'next' ? this.rect.height : -1 * this.rect.height,
+                        translateX: dir === 'next' ? -1 * this.rect.width : this.rect.width,
                         complete: () => {
                             currentSlide.classList.remove('slide--current');
-                            resolve();
-                        }
-                    });
-
-                    const currentTitleSlide = this.DOM.titlesSlides[this.current];
-                    anime({
-                        targets: currentTitleSlide.children,
-                        duration: this.settings.animation.slides.duration,
-                        easing: this.settings.animation.slides.easing,
-                        delay: (t, i, total) => dir === 'next' ? i * 100 : (total - i - 1) * 100,
-                        translateY: [0, dir === 'next' ? 100 : -100],
-                        opacity: [1, 0],
-                        complete: () => {
-                            currentTitleSlide.classList.remove('slide--current');
                             resolve();
                         }
                     });
@@ -172,28 +142,24 @@
                         targets: newSlide,
                         duration: this.settings.animation.slides.duration,
                         easing: this.settings.animation.slides.easing,
-                        translateY: [dir === 'next' ? -1 * this.rect.height : this.rect.height, 0]
+                        translateX: [dir === 'next' ? this.rect.width : -1 * this.rect.width, 0]
                     });
 
                     const newSlideImg = newSlide.querySelector('.slide__img');
-
                     anime.remove(newSlideImg);
                     anime({
                         targets: newSlideImg,
-                        duration: this.settings.animation.slides.duration * 3,
+                        duration: this.settings.animation.slides.duration * 4,
                         easing: this.settings.animation.slides.easing,
-                        translateY: [dir === 'next' ? -100 : 100, 0],
-                        scale: [0.2, 1]
+                        translateX: [dir === 'next' ? 200 : -200, 0]
                     });
 
-                    const newTitleSlide = this.DOM.titlesSlides[this.current];
-                    newTitleSlide.classList.add('slide--current');
                     anime({
-                        targets: newTitleSlide.children,
-                        duration: this.settings.animation.slides.duration * 1.5,
+                        targets: [newSlide.querySelector('.slide__title'), newSlide.querySelector('.slide__desc'), newSlide.querySelector('.slide__link')],
+                        duration: this.settings.animation.slides.duration * 2,
                         easing: this.settings.animation.slides.easing,
-                        delay: (t, i, total) => dir === 'next' ? i * 100 + 100 : (total - i - 1) * 100 + 100,
-                        translateY: [dir === 'next' ? -100 : 100, 0],
+                        delay: (t, i) => i * 100 + 100,
+                        translateX: [dir === 'next' ? 300 : -300, 0],
                         opacity: [0, 1]
                     });
                 });
@@ -203,6 +169,7 @@
                 anime({
                     targets: this.DOM.shape,
                     duration: this.settings.animation.shape.duration,
+                    delay: 150,
                     easing: this.settings.animation.shape.easing.out,
                     d: this.paths.initial,
                     complete: () => this.isAnimating = false
@@ -214,6 +181,7 @@
     };
 
     var slideshow = new Slideshow(document.querySelector('.slideshow'));
+    imagesLoaded('.slide__img', { background: true }, () => document.body.classList.remove('loading'));
 
     function autoplaySlideshow() {
         slideshow.navigate('next');
@@ -234,7 +202,3 @@
     imagesLoaded('.slide__img', { background: true }, () => document.body.classList.remove('loading'));
     playSlideshow();
 };
-
-function visitCurrentSlide() {
-    window.location = $('.slide--current').attr('href');
-}

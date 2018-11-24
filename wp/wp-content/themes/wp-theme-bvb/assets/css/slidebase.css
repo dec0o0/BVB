@@ -1,15 +1,3 @@
-.demo-6 {
-    --color-text: #fff;
-    --color-bg: #020202;
-    --color-link: #fff;
-    --color-link-hover: #415bf8;
-    --color-stitle: #f1f1f1;
-    --fontsize-stitle: 12vw;
-    --color-nav: #fff;
-    --color-nav-hover: #415bf8;
-}
-
-
 /* Fade effect */
 
 .hidden {
@@ -25,6 +13,15 @@
     height: 55vh;
     position: relative;
     overflow: hidden;
+    --color-text: #fff;
+    --color-bg: #020202;
+    --color-stitle: #f1f1f1;
+    --fontsize-stitle: 12vw;
+    --color-nav: #fff;
+    --color-nav-hover: #4fc2cd;
+    --color-link: #fff;
+    --color-link-hover: white;
+    --color-link-hover-bg: #4fc2cd;
 }
 
 .slideshow h2 {
@@ -104,16 +101,10 @@
     bottom: 0;
     text-align: center;
     padding: 2em;
-}
-
-.slidenav__item {
-    border: 0;
-    background: none;
-    font-weight: bold;
     color: var(--color-nav);
 }
 
-.slidenav__item__like {
+.slidenav__item {
     border: 0;
     background: none;
     font-weight: bold;
@@ -158,46 +149,16 @@
 
 .slide__link {
     position: relative;
-    font-size: 1em;
-    font-weight: bold;
-    padding: 1em 2em;
+    text-decoration: none;
     display: block;
-    color: var(--color-slink);
-    background: var(--color-slink-bg);
+    padding: .5em 1em;
+    color: var(--color-link);
     transition: color 0.3s, background 0.3s;
 }
 
 .slide__link:hover {
-    color: var(--color-slink-hover);
-    background: var(--color-slink-hover-bg);
-}
-
-#headerButtons {
-    background-color: #4fc2cd;
-    border-top: 1em #4fc2cd solid;
-}
-
-.arrowParent {
-    position: relative;
-}
-
-.arrowChild {
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
-    width: 0;
-    height: 0;
-    content: "";
-    display: block;
-    position: absolute;
-    overflow: hidden;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.arrowChild.down {
-    border-top: 10px solid #4fc2cd;
-    bottom: -11px;
+    color: var(--color-link-hover);
+    background: var(--color-link-hover-bg);
 }
 
 @media screen and (min-width: 55em) {

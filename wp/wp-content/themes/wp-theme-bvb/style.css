@@ -3185,7 +3185,7 @@ body.is-touch .poptrox-popup .closer {
     }
     /* Wrapper */
     .wrapper {
-        padding: 3.5em 0 4em 0;
+        padding: 2.5em 0;
     }
     /* Header */
     #header {
@@ -3556,11 +3556,55 @@ body.is-touch .poptrox-popup .closer {
     font-size: 1em !important;
 }
 
-#program {
-    display: inline-block;
-    max-width: 150px;
+.visible,
+.hidden {
+    overflow: hidden;
+    /* This container should not have padding, borders, etc. */
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .5s linear;
 }
 
 .hidden {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s .5s, opacity .5s linear;
+}
+
+
+/*
+.visible>div,
+.hidden>div {
+    Put any padding, border, min-height, etc. here. 
+}
+*/
+
+.hidden>div {
+    margin-top: -10000px;
+    transition: margin-top 0s .5s;
+}
+
+.justified {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    margin-bottom: 10px;
+    position: relative;
+    height: 0;
+    border-radius: 5px;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }

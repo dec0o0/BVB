@@ -1,23 +1,27 @@
-    <!-- Main -->
-    <section id="main">
-        <div class = "container" id="content">
-            <header class="major">
-                <h2>Contactează-ne</h2>
+<section id="main">
+    <div class="container">
+        <header class="major">
+        <h2>Contactează-ne</h2>
                 <p>Ne vom bucura să te cunoaștem</p>
-            </header>
+        </header>
 
-            <div class="row 200%">
+            <!-- Content -->
+            <section id="content">
+                    
+        <div class="row 200%">
                 <div class="4u 12u$(medium)">
-                    <section>
-                       <p>Poți folosi formularul de mai jos pentru a ne trimite un mesaj, ne poți suna sau cel mai bine, ne poți visita.</p>
-                       <ul class="labeled-icons">
+                    <ul class="labeled-icons">
                         <li>
                             <h4 class="icon fa-envelope"><span class="label">Email</span></h4>
                             <a href="mailto:contact@bisericavesteabuna.ro?Subject=">contact@bisericavesteabuna.ro</a>
                         </li>
                         <li>
-                            <h4 class="icon fa-phone"><span class="label">Phone</span></h4>
-                            (004) 021 322 4278
+                            <h4 class="icon fa-phone"><span class="label">Telefon</span></h4>
+                            Pastor Emil Meștereagă<br/>(+40) 732 672 704
+                        </li>
+                        <li>
+                            <h4 class="icon fa-phone"><span class="label">Telefon</span></h4>
+                            Pastor Adrian Jurj<br/>(+40) 743 595 146
                         </li>
                         <li>
                             <h4 class="icon fa-home"><span class="label">Adresă</span></h4>
@@ -32,51 +36,53 @@
                             <a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg">BisericaPenticostalaVesteaBuna</a>
                         </li>
                     </ul>
-                    </section>
-
                 </div>
                 <div class="8u$ 12u$(medium) important(medium)">
-                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'>
-			</script>
-			<div class="contmap" style='overflow:hidden;height:550px;width:100%;'>
-				<div id='gmap_canvas' style='height:100%;width:100%;'>
-			</div>
-				<div>
-					<small><a href="http://embedgooglemaps.com">embed google maps</a>
-					</small>
-				</div>
-					<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-				</div>
-				<script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(44.431592, 26.125900),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(44.431592, 26.125900)});infowindow = new google.maps.InfoWindow({content:'<strong>Biserica Vestea Buna</strong><br>Bucuresti<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
-				</script>
-                </div>
-                La adresa se poate ajunge cu metroul pana la Piata Unirii si de acolo tramvaiul 40 sau 56 cu capatul la Sfanta Vineri.
-                </div>
+                    <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.0729410075946!2d26.12364131531884!3d44.43166597910234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff264e1706bf%3A0xabc547def6e972de!2sBiserica+Vestea+Buna!5e0!3m2!1sen!2sro!4v1543089718464" width="600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <p>Cea mai aproapiată stație STB este Universitatea Hyperion, iar ce-a mai aproapiată stație de metrou este Piața Muncii.</p>
 
-
-		
-			<div class="container1">
-            <div class="form-container">
-                <h1>
-                    Ne poti scrie!
-                </h1>
-                <form method="post" id="reused_form" >
-                    <label for="name">Numele:</label>
-                    <input id="name" type="text" name="Name" required maxlength="50">
-                    <label for="email">Adresa Email:</label>
-                    <input id="email" type="email" name="Email" required maxlength="50">
-                    <label for="message">Mesajul:</label>
-                    <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
-                    <button id ="button" class="button-primary" type="submit" >Trimite</button>
-                </form>
-                <div id="success_message" style="display:none">
-                    <h3>Mesaj trimis!</h3> 
-                    <p> Revenim cu un raspuns cat de curand posibil. </p>
                 </div>
-                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Eroare!</h3> Eroare de trimitere a mesajului. </div>
             </div>
-        </div>
+            <hr/>
+            <div>
+                <p>Te rugăm folosește fără rezerve acest formular pentru a ne trimite un mesaj. Încercăm să fim cât se poate de prompți în a răspunde mesajelor.</p>
+            <form method="post" action="#">
+                    <div class="row uniform 50%">
+                        <div class="6u 12u$(small)">
+                            <input type="text" name="name" id="name" value="" placeholder="Nume">
+                        </div>
+                        <div class="6u$ 12u$(small)">
+                            <input type="text" name="prenume" id="prenume" value="" placeholder="Prenume">
+                        </div>
+                        <div class="6u 12u$(large)">
+                            <input type="email" name="email" id="email" value="" placeholder="Email">
+                        </div>
 
-	
-        </div>
+                        <div class="6u 12u$(small)">
+                            <input type="checkbox" id="copy" name="copy">
+                            <label for="copy">Trimite-mi o copie a mesajului</label>
+                        </div>
+
+                        <div class="6u 12u$(small)">
+                            <input type="checkbox" id="real" name="real">
+                            <label for="copy">Sunt o persoană reală, nu un robot</label>
+                        </div>
+
+                        <div class="12u$">
+                            <textarea name="message" id="message" placeholder="Scrie aici mesajul tău" rows="7"></textarea>
+                        </div>
+                        <div class="12u$">
+                            <ul class="actions">
+                                <li><input type="submit" value="Trimite" class="special"></li>
+                                <li><input type="reset" value="Resetează câmpurile"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+                    </div>
+</div>
     </section>
+</div>
+</section>

@@ -190,12 +190,15 @@ window.onscroll = function() {
     prevScrollpos = currentScrollPos;
 }
 
+var saptamanalCtn = document.querySelector("#programSaptamanal"),
+    lunarCtn = document.querySelector("#programLunar");
+
 function scheduleChange(control) {
     if (control == 's') {
-        $("#programSaptamanal").removeClass("hidden");
-        $("#programLunar").removeClass("hidden").addClass("hidden")
+        saptamanalCtn.className = "visible";
+        lunarCtn.className = "hidden";
     } else {
-        $("#programSaptamanal").removeClass("hidden").addClass("hidden");
-        $("#programLunar").removeClass("hidden");
+        saptamanalCtn.className = "hidden";
+        lunarCtn.className = "visible";
     }
 }

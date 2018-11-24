@@ -28,58 +28,42 @@ $currentUrl = get_template_directory_uri();
 ?>
 
     <section>
+        
         <div class="slideshow">
         <div class="slides slides--images">
             <?php for($i = 0; $i < count($slidePics); $i++) { 
-                if($i == 0) {?>
-                <div class="slide slide--current" href="<?php echo $slideUrls[$i] ?>">
-                <?php } else { ?>
-                    <div class="slide" href="<?php echo $slideUrls[$i] ?>">
-                <?php } ?>
-                <div class="slide__img" style="background-image: url(<?php echo $currentUrl . '/assets/css/images/overlay.png' ?>), url(<?php echo $slidePics[$i] ?>)"></div>
-            </div>
-                <?php
-            } ?>
-        </div>
-        <div class="slides slides--titles">
-            <?php for($i = 0; $i < count($slideTitles); $i++) { 
                 if($i == 0) {?>
                 <div class="slide slide--current">
                 <?php } else { ?>
                     <div class="slide">
                 <?php } ?>
-
+                <div class="slide__img" style="background-image: url(<?php echo $currentUrl . '/assets/css/images/overlay.png' ?>), url(<?php echo $slidePics[$i] ?>)"></div>
                 <h2 class="slide__title"><?php echo $slideTitles[$i] ?></h2>
-                <p><?php echo $slideSummary[$i] ?></p>
+                <p class="slide__desc"><?php echo $slideSummary[$i] ?></p>
+                <a class="slide__link" href="<?php echo $slideUrls[$i] ?>">Deschide</a>
             </div>
                 <?php
             } ?>
         </div>
         <nav class="slidenav">
-            <button class="slidenav__item slidenav__item--prev button"><span class="icon fa-chevron-left fa-lg"></span></button>
-            <button class="slidenav__item__like button" onclick="visitCurrentSlide()"><span class="icon fa-search-plus fa-lg"></span></button>
-            <button class="slidenav__item slidenav__item--next button"><span class="icon fa-chevron-right fa-lg"></span></button>
-        </nav>
+					<button class="slidenav__item slidenav__item--prev icon fa-chevron-left" ><span class=""></span> Anteriorul</button>
+					<span>/</span>
+					<button class="slidenav__item slidenav__item--next">Următorul <span class="icon fa-chevron-right"></span></button>
+				</nav>
         </div>
-        <div id="headerButtons">
-            <div class="container">
-                <div class="row">
-                    <div class="3u 6u(large) 12u$(medium)">
-                        <button class="button special small fit icon fa-clock-o" onclick="scheduleChange('s')">Programul săptămânal</a>
-                    </div>
-                    <div class="3u 6u(large) 12u$(medium)">
-                        <button class="button special small fit icon fa-calendar" onclick="scheduleChange('l')">Programul lunar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Four -->
+        
     <section id="one" class="wrapper style1">
         <div class="container">
+            <div class="row">
+                <div class="3u 6u(large) 12u$(medium)">
+                    <button class="button alt small fit icon fa-clock-o" onclick="scheduleChange('s')">Programul săptămânal</a>
+                </div>
+                <div class="3u 6u(large) 12u$(medium)">
+                    <button class="button alt small fit icon fa-calendar" onclick="scheduleChange('l')">Programul lunar</a>
+                </div>
+            </div>
             <div class="table-wrapper hidden" id="programSaptamanal">
+                <br/>
                 <table>
                     <thead>
                         <tr>
@@ -122,11 +106,13 @@ $currentUrl = get_template_directory_uri();
                 </table>
             </div>
             <div class="table-wrapper hidden" id="programLunar">
+            <br/>
                 <table>
                     <thead>
                         <tr>
                             <th><h3>Eveniment</h3></th>
                             <th><h3>Periodicitate</h3></th>
+                            <th><h3>Următoarea întâlnire</th>
                             <th><h3>Ora începerii</h3></th>
                         </tr>
                     </thead>
@@ -134,11 +120,13 @@ $currentUrl = get_template_directory_uri();
                         <tr>
                             <td>Întâlnirea familiilor</td>
                             <td>În ultima vineri a lunii</td>
+                            <td/>
                             <td>18:00</td>
                         </tr>
                         <tr>
                             <td>Întâlnirea surorilor</td>
                             <td>În prima sâmbătă a lunii</td>
+                            <td/>
                             <td>18:00</td>
                         </tr>
                     </tbody>

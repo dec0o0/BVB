@@ -38,6 +38,7 @@
                         <li>
                             <a href="<?php echo home_url(); ?>/departamente">Departamente</a>
                             <ul>
+                                <li><a href="<?php echo home_url(); ?>/departamente">Prezentare generală</a></li>
                                 <li><a href="#">Închinare</a></li>
                                 <li><a href="<?php echo home_url(); ?>/misiune">Misiune & evanghelizare</a></li>
                                 <li><a href="#">Acțiuni sociale</a></li>
@@ -46,15 +47,11 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="#">Resurse</a>
-                    <ul>
-                        <li><a href="#">Foto</a></li>
-                        <li><a href="#">Recomandări ???</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg/videos">Arhivă video</a></li>
-                    </ul>
-                </li>
                 <li><a href="<?php echo home_url(); ?>/contact">Contact</a></li>
                 <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg" target="_blank" class="button special">Transmisie live</a>
+                <ul>
+                        <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg/videos">Arhivă video</a></li>
+                    </ul>
                 </li>
             </ul>
         </nav>

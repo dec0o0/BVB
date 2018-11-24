@@ -1,92 +1,4 @@
 
-
-    <section class="style1">
-        <div id="somedialog" class="dialog">
-            <div class="dialog__overlay"></div>
-            <div class="dialog__content">
-                <div class="morph-shape">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 560 280" preserveAspectRatio="none">
-                                                <rect x="2" y="2" fill="none" width="556" height="276"/>
-                                            </svg>
-                </div>
-                <div class="dialog-inner">
-                    <h3>Programul
-                        <select name="category" id="program" onchange="scheduleChange(this)">
-                                <option value="s">SĂPTĂMÂNAL</option>
-                                <option value="l">LUNAR</option>
-                            </select></h3>
-                    <a href="#" class="dialog__close icon fa-times fa-lg" data-dialog-close><span class="label">Închide</span></a>
-                    <br/>
-                    <div class="table-wrapper" id="programSaptamanal">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Ziua săptămânii</th>
-                                    <th>Eveniment</th>
-                                    <th>Ora începerii</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td rowspan=" 2 ">Duminică</td>
-                                    <td>Slujba de dimineața</td>
-                                    <td>10:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Slujba de seară</td>
-                                    <td>18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Marți</td>
-                                    <td>Seară de rugăciune</td>
-                                    <td>18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Miercuri</td>
-                                    <td>Întâlnirea adolescenților</td>
-                                    <td>18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Joi</td>
-                                    <td>Întâlnire de la mijlocul săptămânii</td>
-                                    <td>18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Vineri</td>
-                                    <td>Întâlnirea grupurilor de tineri</td>
-                                    <td>18:00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="table-wrapper hidden" id="programLunar">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Eveniment</th>
-                                    <th>Periodicitate</th>
-                                    <th>Oră începere</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Întâlnirea familiilor</td>
-                                    <td>În ultima vineri a lunii</td>
-                                    <td>18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Întâlnirea surorilor</td>
-                                    <td>În prima sâmbătă a lunii</td>
-                                    <td>18:00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <div id="footer">
         <div class="container">
@@ -94,7 +6,7 @@
 
                 <section class="4u 6u(medium) 12u$(small)">
                     <header class="major">
-                        <h3>Contact</h3>
+                        <h3>Detalii contact</h3>
                     </header>
                     <ul class="labeled-icons">
                         <li>
@@ -102,8 +14,12 @@
                             <a href="mailto:contact@bisericavesteabuna.ro?Subject=">contact@bisericavesteabuna.ro</a>
                         </li>
                         <li>
-                            <h4 class="icon fa-phone"><span class="label">Phone</span></h4>
-                            (004) 021 322 4278
+                            <h4 class="icon fa-phone"><span class="label">Telefon</span></h4>
+                            Pastor Emil Meștereagă<br/>(+40) 732 672 704
+                        </li>
+                        <li>
+                            <h4 class="icon fa-phone"><span class="label">Telefon</span></h4>
+                            Pastor Adrian Jurj<br/>(+40) 743 595 146
                         </li>
                         <li>
                             <h4 class="icon fa-home"><span class="label">Adresă</span></h4>
@@ -123,7 +39,7 @@
                 <section class="4u$ 6u$(medium) 12u$(small)">
                     <!--<header class="major"><h3>Adresă</h3></header>	-->
                     <!-- Google API key AIzaSyDUzsXHkCxhQhOfsbmTgkACRjP7_42uf3I -->
-                    <iframe style="border-radius: 4px" width="600" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUzsXHkCxhQhOfsbmTgkACRjP7_42uf3I
+                    <iframe style="border-radius: 4px" width="600" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUzsXHkCxhQhOfsbmTgkACRjP7_42uf3I
 							    &q=Biserica+Vestea+buna,Bucharest" allowfullscreen>
 							</iframe>
                 </section>
