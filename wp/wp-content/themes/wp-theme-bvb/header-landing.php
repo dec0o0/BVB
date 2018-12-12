@@ -33,16 +33,17 @@
                 <li>
                 <a href="<?php echo home_url(); ?>/viziune">Biserica locală</a>
                     <ul>
+                        <li><a href="<?php echo home_url(); ?>/istoric">Istoric</a></li>
                         <li><a href="<?php echo home_url(); ?>/viziune">Viziune</a></li>
                         <li><a href="<?php echo home_url(); ?>/conducere">Conducere</a></li>
                         <li>
                             <a href="<?php echo home_url(); ?>/departamente">Departamente</a>
                             <ul>
                                 <li><a href="<?php echo home_url(); ?>/departamente">Prezentare generală</a></li>
-                                <li><a href="#">Închinare</a></li>
+                                <li><a href="<?php echo home_url(); ?>/inchinare">Închinare</a></li>
                                 <li><a href="<?php echo home_url(); ?>/misiune">Misiune & evanghelizare</a></li>
-                                <li><a href="#">Acțiuni sociale</a></li>
-                                <li><a href="#">Copii, adolescenți, tineret</a></li>
+                                <li><a href="<?php echo home_url(); ?>/social">Acțiuni sociale</a></li>
+                                <li><a href="<?php echo home_url(); ?>/tineret">Copii, adolescenți, tineret</a></li>
                             </ul>
                         </li>
                     </ul>

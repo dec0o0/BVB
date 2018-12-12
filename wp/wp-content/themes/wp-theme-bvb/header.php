@@ -19,7 +19,15 @@
 
 <!-- Header -->
 <div id="header">
-    <h1 id="logo"><a href="<?php echo home_url(); ?>" class="icon fa-lightbulb-o"> BVB</a></h1>
+
+<h1 id="logo">
+    <a href="<?php echo home_url(); ?>">
+        <img class="img fit small" src="<?php echo get_template_directory_uri() . '/assets/images/logo_piccolo.png' ?>"/>
+    </a>
+</h1>
+    <h1 id="title">
+        <a href="<?php echo home_url(); ?>"> BVB</a>
+    </h1>
     <nav id="nav">
             <ul>
             <li><a href="<?php echo home_url(); ?>/anunturi">Anunțuri</a></li>
@@ -28,16 +36,17 @@
                 <li>
                     <a href="<?php echo home_url(); ?>/viziune">Biserica locală</a>
                     <ul>
+                        <li><a href="<?php echo home_url(); ?>/istoric">Istoric</a></li>
                         <li><a href="<?php echo home_url(); ?>/viziune">Viziune</a></li>
                         <li><a href="<?php echo home_url(); ?>/conducere">Conducere</a></li>
                         <li>
                             <a href="<?php echo home_url(); ?>/departamente">Departamente</a>
                             <ul>
                                 <li><a href="<?php echo home_url(); ?>/departamente">Prezentare generală</a></li>
-                                <li><a href="#">Închinare</a></li>
+                                <li><a href="<?php echo home_url(); ?>/inchinare">Închinare</a></li>
                                 <li><a href="<?php echo home_url(); ?>/misiune">Misiune & evanghelizare</a></li>
-                                <li><a href="#">Acțiuni sociale</a></li>
-                                <li><a href="#">Copii, adolescenți, tineret</a></li>
+                                <li><a href="<?php echo home_url(); ?>/social">Acțiuni sociale</a></li>
+                                <li><a href="<?php echo home_url(); ?>/tineret">Copii, adolescenți, tineret</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -50,7 +59,7 @@
                 </li>
                 <li><a href="" id="friendlyRead" class="icon fa-toggle-off normalSized"></a>
                     <ul>
-                        <li>Comută modul citire</li>
+                        <li>Comută modul citire facilă</li>
                     </ul>
                 </li>
             </ul>

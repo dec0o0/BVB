@@ -7,8 +7,7 @@ $args = array(
     'orderby' => 'date',
     'order' => 'DESC',
     'cat' => '4',
-    'posts_per_page' => 5,
-    'post_parent' => $parent,
+    'posts_per_page' => 5
 );
 $q = new WP_Query($args);
 
@@ -140,8 +139,7 @@ $currentUrl = get_template_directory_uri();
     'orderby' => 'date',
     'order' => 'DESC',
     'cat' => '2',
-    'posts_per_page' => 3,
-    'post_parent' => $parent,
+    'posts_per_page' => 3
 );
 $q = new WP_Query($args);
 ?>

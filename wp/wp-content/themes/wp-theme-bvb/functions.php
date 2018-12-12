@@ -11,3 +11,15 @@ function getAssetURL( $atts ){
 }
 
 add_shortcode( 'asset', 'getAssetURL' );
+
+function linkTo($atts) {
+	extract( shortcode_atts(
+		array(
+				'href' => "",
+				'text' => ""
+		), $atts )
+);
+	return '<a href="' . home_url() . "/" . $href . '">' . $text . '</a>';
+}
+
+add_shortcode('link', 'linkTo');

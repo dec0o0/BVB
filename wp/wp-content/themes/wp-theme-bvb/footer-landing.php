@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="copyright">
-            &copy; Vestea Bună București
+            &copy; Biserica Penticostală Vestea Bună București
         </div>
     </div>
 
@@ -61,19 +61,10 @@
     <script src="<?php echo get_template_directory_uri() . '/assets/js/main.js'; ?>"></script>
     <script src="<?php echo get_template_directory_uri() . '/assets/js/classie.js'?>"></script>
     <script src="<?php echo get_template_directory_uri() . '/assets/js/modernizr.custom.js'?>"></script>
-    <script src="<?php echo get_template_directory_uri() . '/assets/js/dialogFx.js'?>"></script>
     <script src="<?php echo get_template_directory_uri() . '/assets/js/slide/imagesloaded.pkgd.min.js' ?>"></script>
     <script src="<?php echo get_template_directory_uri() . '/assets/js/slide/anime.min.js' ?>"></script>
     <script src="<?php echo get_template_directory_uri() . '/assets/js/slide/slideshow.js' ?>"></script>
 
-    <script>
-        (function() {
-            var dlgtrigger = document.querySelector('[data-dialog]'),
-                somedialog = document.getElementById(dlgtrigger.getAttribute('data-dialog')),
-                dlg = new DialogFx(somedialog);
-            dlgtrigger.addEventListener('click', dlg.toggle.bind(dlg));
-        })();
-    </script>
     <!--[if lte IE 8]><script src="<?php echo get_template_directory_uri() . '/assets/js/ie/respond.min.js'; ?>"></script><![endif]-->
     
 

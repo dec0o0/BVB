@@ -3,18 +3,21 @@
         <div class="container">
             <div class="row 200% uniform">
                 <section class="4u 6u(medium) 12u$(small)">
+                <p>
                    Declaratie pentru search. "Nu te lasa biruit de rau ci biruieste raul prin bine."
+                   </p>
                 </section>
                 <section class="4u 6u(medium) 12u$(small)">
                     <ul class="labeled-icons">
                     <li>
-                            <h4 class="icon fa-phone"><span class="label">Phone</span></h4>
-                            <a href="<?php echo home_url(); ?>/contact">Contact</a>
-                        </li>
-                        <li>
                             <h4 class="icon fa-sitemap"><span class="label">Email</span></h4>
                             <a href="<?php echo home_url(); ?>/hartasite">Hartă site</a>
                         </li>
+                    <li>
+                            <h4 class="icon fa-phone"><span class="label">Phone</span></h4>
+                            <a href="<?php echo home_url(); ?>/contact">Contact</a>
+                        </li>
+                       
                         
                     </ul>
 
@@ -35,7 +38,7 @@
             </div>
         </div>
         <div class="copyright">
-            &copy; Vestea Bună București
+            &copy; Biserica Penticostală Vestea Bună București
         </div>
     </div>
 
@@ -50,16 +53,6 @@
     <script src="<?php echo get_template_directory_uri() . '/assets/js/main.js'; ?>"></script>
     <script src="<?php echo get_template_directory_uri() . '/assets/js/classie.js'?>"></script>
     <script src="<?php echo get_template_directory_uri() . '/assets/js/modernizr.custom.js'?>"></script>
-    <script src="<?php echo get_template_directory_uri() . '/assets/js/dialogFx.js'?>"></script>
-
-    <script>
-        (function() {
-            var dlgtrigger = document.querySelector('[data-dialog]'),
-                somedialog = document.getElementById(dlgtrigger.getAttribute('data-dialog')),
-                dlg = new DialogFx(somedialog);
-            dlgtrigger.addEventListener('click', dlg.toggle.bind(dlg));
-        })();
-    </script>
     <!--[if lte IE 8]><script src="<?php echo get_template_directory_uri() . '/assets/js/ie/respond.min.js'; ?>"></script><![endif]-->
     
 

@@ -12,8 +12,7 @@ $args = array(
      'order' => 'DESC' ,
      'posts_per_page' => 7,
      'cat' => '3',
-     'paged' => $paged,
-     'post_parent' => $parent
+     'paged' => $paged
 ); 
 
 $q = new WP_Query($args); ?>
