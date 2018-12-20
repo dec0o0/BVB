@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row 200% uniform">
 
-                <section class="4u 6u(medium) 12u$(small)">
+                <section class="4u 12u$(small)">
                     <header class="major">
                         <h3>Detalii contact</h3>
                     </header>
@@ -36,10 +36,10 @@
                     </ul>
 
                 </section>
-                <section class="4u$ 6u$(medium) 12u$(small)">
+                <section class="8u$ 12u$(small)">
                     <!--<header class="major"><h3>Adresă</h3></header>	-->
                     <!-- Google API key AIzaSyDUzsXHkCxhQhOfsbmTgkACRjP7_42uf3I -->
-                    <iframe style="border-radius: 4px" width="600" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUzsXHkCxhQhOfsbmTgkACRjP7_42uf3I
+                    <iframe style="border-radius: 4px" width="100%" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUzsXHkCxhQhOfsbmTgkACRjP7_42uf3I
 							    &q=Biserica+Vestea+buna,Bucharest" allowfullscreen>
 							</iframe>
                 </section>

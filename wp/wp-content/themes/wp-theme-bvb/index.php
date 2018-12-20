@@ -66,7 +66,7 @@ $currentUrl = get_template_directory_uri();
                 <table>
                     <thead>
                         <tr>
-                            <th><h3>Ziua săptămânii</h3></th>
+                            <th><h3>Zi</h3></th>
                             <th><h3>Eveniment</h3></th>
                             <th><h3>Ora începerii</h3></th>
                         </tr>
@@ -110,7 +110,7 @@ $currentUrl = get_template_directory_uri();
                     <thead>
                         <tr>
                             <th><h3>Eveniment</h3></th>
-                            <th><h3>Periodicitate</h3></th>
+                            <th><h3>Frecvență</h3></th>
                             <th><h3>Următoarea întâlnire</th>
                             <th><h3>Ora începerii</h3></th>
                         </tr>

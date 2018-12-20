@@ -3,9 +3,12 @@
         <div class="container">
             <div class="row 200% uniform">
                 <section class="4u 6u(medium) 12u$(small)">
-                <p>
-                   Declaratie pentru search. "Nu te lasa biruit de rau ci biruieste raul prin bine."
-                   </p>
+                <header class="major">
+                    <h5>"Nu te lăsa biruit de rău ci biruiește răul prin bine."
+                        <br/>
+                        <a href="https://biblia.resursecrestine.ro/romani/12#verset-21">Romani 12:21</a>
+                    </h5>
+                </header>
                 </section>
                 <section class="4u 6u(medium) 12u$(small)">
                     <ul class="labeled-icons">
@@ -17,10 +20,7 @@
                             <h4 class="icon fa-phone"><span class="label">Phone</span></h4>
                             <a href="<?php echo home_url(); ?>/contact">Contact</a>
                         </li>
-                       
-                        
                     </ul>
-
                 </section>
                 <section class="4u 6u(medium) 12u$(small)">
                     <ul class="labeled-icons">

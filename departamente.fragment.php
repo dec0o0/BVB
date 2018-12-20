@@ -37,7 +37,7 @@
                             <p> Lider senior: Pastor Adrian Jurj</p>
                             <h5> Departamentul de copii, adolescenți și tineret</h5>
                             <p style="margin-bottom:0px;"> Lider senior: Diacon Alin Pănican</p>
-                            <p> Lider secund: Andy Eduard Piftor</p>
+                            <p style="font-size: 0.9em">Lider secund: Andy Eduard Piftor</p>
                         </header>
                         <h4>B. Grupuri</h4>
                         <h5>Categorii de grupuri</h5>

@@ -1,75 +1,128 @@
 <section id="main">
     <div class="container">
         <header class="major">
-            <h2>DEPARTAMENTUL DE EVANGHELIZARE ȘI MISIUNE</h2>
-            <p>Noi credem că scopul existenței Bisericii este răspândirea Evangheliei, <br/> pentru mântuirea oamenilor, prin jertfa Domnului Isus Hristos</p>
+            <h2>Echipa de conducere</h2>
+            <p>a bisericii noastre</p>
         </header>
 
-        <div class="row 200%">
-            <div class="3u 12u$(medium)">
-                <!-- Sidebar -->
-                <section id="sidebar">
-                    <section>
-                        <a href="#" class="image fit"><img src="[asset url='/images/buc.png']" alt="" /></a>
-                    </section>
-                </section>
-            </div>
-            <div class="9u$ 12u$(medium) important(medium)">
+        <!-- Content -->
+        <section id="content">
+            <h3>Conducerea bisericii</h3>
+            <p>
+                Principiile de funcționare:
+            </p>
+            <ol>
+                <li>Noi credem că modelul de conducere bisericească cel mai apropiat de învăţătura biblică este modelul conducerii prezbiteriale.
+                    <ul>
+                        <li>
+                            Acesta presupune ca o comunitate creştină să fie condusă de un grup de prezbiteri, asistaţi de diaconi, a căror comuniune este prezidată de unul dintre prezbiteri, numit pastor senior.</li>
+                        <li>
+                            Pastorul nu ocupă o treaptă ierarhică superioară colegilor săi prezbiteri, chiar dacă este ordinat special pentru ocuparea acestei poziţii, ci este un reprezentant al acestora înaintea bisericii şi al bisericii în relaţia cu societatea.</li>
+                    </ul>
+                </li>
+                <li>
+                    Conducerea bisericii este asigurată de grupul slujitorilor ordinați, asistat de lideri desemnați pentru coordonarea de departamente și grupuri.
+                    <ul></ul>
+                </li>
+                <li>
+                    Selectarea creștinilor chemați de Dumnezeu în slujbe de conducere spirituală se face de către grupul slujitorilor ordinați, fie în mod direct, fie la sugestia liderilor neordinați aflați deja în poziții de conducere.</li>
+            </ol>
+            <p></p>
 
-                <!-- Content -->
-                <section id="content">
-                    <p>
-                        Pentru realizarea acestui obiectiv, Biserica ’’Vestea Bună’’ își propune ca, prin membrii ei, să vestească Evanghelia în București, în orașele și sarele din România, și până la Marginile Pământului.
-                    </p>
-                    <p>
-                        Departamentul de evanghelizare și misiune are în obiectiv:
-                        <ul>
-                            <li>Mobilizarea membrilor bisericii la evanghelizare și misiune</li>
-                            <li>Chemarea bisericii la rugăciune, pentru lucrători la seceriș</li>
-                            <li>Dezvoltarea unor strategii ale bisericii de evanghelizare și misiune</li>
-                            <li>Organizarea Conferinței anuale de misiune a bisericii </li>
-                            <li>Organizarea unor slujbe speciale de evanghelizare ale bisericii</li>
-                            <li>organizarea unor evenimente de evanghelizare ale bisericii, în afara bisericii</li>
-                            <li>Organizarea și desfășurarea unor evenimente de misiune pe termen scurt în alte țări</li>
-                            <li>Trimiterea și susținerea în misiune a unor misionari din biserică </li>
-                            <li>Adoptarea și susținerea în misiune a unor misionari din alte biserici</li>
-                            <li>Susținerea, constantă, în rugăciune a misionarilor</li>
-                        </ul>
-                    </p>
-                    <p>
-                        Comitetul de misiune al Bisericii ’’Vestea Bună’’ este compus din:
-                        <ul>
-                            <li>Emil Meștereagă</li>
-                            <li>Adrian Jurj</li>
-                            <li>George Robitu</li>
-                            <li>Alin Pănican</li>
-                            <li>Marian Diaconu</li>
-                        </ul>
-                    </p>
-                    <h4>
-                        Kairosul Bisericii secolului XXI
-                    </h4>
-                    <blockquote>
-                        ’’…Iată că acum este vremea potrivită; iată că acum este ziua mântuirii.’’ (2 Corinteni 6.2).
-                    </blockquote>
-                    <p>
-                        <i>Kairos</i> este termenul folosit în Greaca veche pentru a desemna timpul potrivit sau oportunitatea pentru realizarea unui anumit lucru. </p>
-                    <p>În Biblie <i>kairos</i> este folosit pentru a exprima timpul potrivit acordat de Dumnezeu omului pentru primirea mântuirii. Folosirea sa indică faptul că Dumnezeu acordă prilejul sau șansa oamenilor de a auzi Evanghelia mântuirii (2
-                        Corinteni 6.2) </p>
-                    <p> Mântuitorul Isus Hristos a venit la vremea potrivită în istoria omenirii, pentru a deveni Salvatorul omului din starea de păcat și de la pierzarea determinată de aceasta (Galateni 4.4; Evrei 1.1-2).</p>
-                    <p>Începutul predicării lui Isus Hristos a fost la împlinirea vremii, când pocăința și acceptarea Evangheliei însemna debutul Împărăției lui Dumnezeu, în viața oamenilor care vor crede în El și în lume (Marcu 1.15). </p>
-                    <p>Prilejul lui Dumnezeu sau timpul oportun acordat omului pentru mântuire trebuie recunoscut și folosit. Pierderea prilejului acordat pentru mântuire poate fi urmată de pieire și de regretele profunde datorate refuzului de a folosi șansa
-                        oferită de Dumnezeu. </p>
-                    <p><i>Kairos</i> reprezintă și vremea potrivită sau prilejul oportun de vestire a Evangheliei de către Biserică, în general, și de fiecare credincios, în particular. </p>
-                    <p>Răscumpărați vremea este imperativul transmis de Apostolul Pavel credincioșilor din Efes (Efeseni 5.16). Există o vreme potrivită în care Evanghelia trebuie vestită oamenilor. Irosirea acelui timp oportun poate însemna pierderea prilejului
-                        mântuirii și a șansei oamenilor de a fi mântuiți. </p>
-                    <p>Noi, Biserica secolului XXI suntem responsabili de a propovădui Evanghelia acestei generați contemporane nouă. </p>
-                    <p>Natura trecătoare a vieții, încercările disperate ale vrășmașului de a-i ține pe oameni departe de auzirea Evangheliei mântuirii și vremea revenirii iminente a lui Hristos sunt factorii care ne determină să nu irosim nici o ocazie,
-                        ci să vestim Evanghelia celor din generația noastră.
-                    </p>
-                </section>
+        </section>
+        <section id="conducerePlaceHolder">
+            <h3>Echipa pastorală</h3>
+            <div class="box alt">
+                <div class="row 50% uniform">
+                    <div class="3u">
+                        <span class="image fit"><img src="[asset url='/images/conducere/vasile_roske.jpeg']" alt=""></span>
+                        <header>
+                            <h4>Vasile Roske</h4>
+                            <p>Pastor onorific</p>
+                        </header>
+                    </div>
+                    <div class="3u">
+                        <span class="image fit"><img src="[asset url='/images/conducere/emil_mestereaga.jpeg']" alt=""></span>
+                        <header>
+                            <h4>Emil Meștereagă</h4>
+                            <p>Pastor senior</p>
+                        </header>
+                    </div>
+                    <div class="3u">
+                        <span class="image fit"><img src="[asset url='/images/conducere/cirprian_terinte.jpeg']" alt=""></span>
+                        <header>
+                            <h4>Ciprian Terinte</h4>
+                            <p>Pastor asistent</p>
+                        </header>
+                    </div>
+                    <div class="3u">
+                        <span class="image fit"><img src="[asset url='/images/conducere/adrian_jurj.jpeg']" alt=""></span>
+                        <header>
+                            <h4>Adrian Jurj</h4>
+                            <p>Pastor asistent</p>
+                        </header>
+                    </div>
+                    <div class="3u">
+                        <span class="image fit"><img src="[asset url='/images/conducere/dragos_stefanica.jpeg']" alt=""></span>
+                        <header>
+                            <h4>Dragoș Ștefănică</h4>
+                            <p>Prezbiter</p>
+                        </header>
+                    </div>
+                    <div class="3u">
+                        <span class="image fit"><img src="[asset url='/images/conducere/dan_epure.jpeg']" alt=""></span>
+                        <header>
+                            <h4>Daniel Epure</h4>
+                            <p>Prezbiter</p>
+                        </header>
+                    </div>
+                    <div class="3u">
+                        <span class="image fit"><img src="[asset url='/images/thumbs/01.jpg']" alt=""></span>
+                        <header>
+                            <h4>Titi Piftor</h4>
+                            <p>Prezbiter</p>
+                        </header>
+                    </div>
+                    <div class="3u">
+                        <span class="image fit"><img src="[asset url='/images/thumbs/01.jpg']" alt=""></span>
+                        <header>
+                            <h4>Nicolae Văduva</h4>
+                            <p>Prezbiter</p>
+                        </header>
+                    </div>
+                    <div class="3u">
+                        <span class="image fit"><img src="[asset url='/images/thumbs/01.jpg']" alt=""></span>
+                        <header>
+                            <h4>Cristian Dragomir</h4>
+                            <p>Diacon</p>
+                        </header>
+                    </div>
+                    <div class="3u">
+                        <span class="image fit"><img src="[asset url='/images/conducere/dumitru_piscuc.jpeg']" alt=""></span>
+                        <header>
+                            <h4>Dumitru Piscuc</h4>
+                            <p>Diacon</p>
+                        </header>
+                    </div>
+                    <div class="3u">
+                        <span class="image fit"><img src="[asset url='/images/thumbs/01.jpg']" alt=""></span>
+                        <header>
+                            <h4>Alin Pănican</h4>
+                            <p>Diacon</p>
+                        </header>
+                    </div>
+                    <div class="3u">
+                        <span class="image fit"><img src="[asset url='/images/conducere/marian_manescu.jpeg']" alt=""></span>
+                        <header>
+                            <h4>Marian Mănescu</h4>
+                            <p>Diacon</p>
+                        </header>
+                    </div>
 
+                </div>
             </div>
-        </div>
+
+        </section>
+
     </div>
 </section>

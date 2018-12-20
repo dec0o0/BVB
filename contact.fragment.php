@@ -9,7 +9,7 @@
             <section id="content">
                     
         <div class="row 200%">
-                <div class="4u 12u$(medium)">
+                <div class="4u 12u$(medium) important(medium)">
                     <ul class="labeled-icons">
                         <li>
                             <h4 class="icon fa-envelope"><span class="label">Email</span></h4>
@@ -37,7 +37,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="8u$ 12u$(medium) important(medium)">
+                <div class="8u$ 12u$(medium)">
                     <div class="map-responsive">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.0729410075946!2d26.12364131531884!3d44.43166597910234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff264e1706bf%3A0xabc547def6e972de!2sBiserica+Vestea+Buna!5e0!3m2!1sen!2sro!4v1543089718464" width="600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
@@ -48,7 +48,7 @@
             <hr/>
             <div>
                 <p>Te rugăm folosește fără rezerve acest formular pentru a ne trimite un mesaj. Încercăm să fim cât se poate de prompți în a răspunde mesajelor.</p>
-            <form method="post" action="#">
+            <form action="[pathOf path='contact']" id="contactForm" method="post">
                     <div class="row uniform 50%">
                         <div class="6u 12u$(small)">
                             <input type="text" name="name" id="name" value="" placeholder="Nume">
@@ -80,9 +80,11 @@
                             </ul>
                         </div>
                     </div>
+
+                    <input type="hidden" name="submitted" id="submitted" value="true" />w
                 </form>
-                    </div>
-</div>
+            </div>
+        </div>
     </section>
 </div>
 </section>

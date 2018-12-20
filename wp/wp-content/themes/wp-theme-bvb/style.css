@@ -132,6 +132,9 @@ section {
 
 body {
     line-height: 1;
+    --special-color: #4fc2cd;
+    /* #103461; */
+    /* #4fc2cd; */
 }
 
 ol,
@@ -1513,8 +1516,6 @@ textarea {
     font-size: 13pt;
     font-weight: 400;
     line-height: 2em;
-    --special-color: #103461;
-    /* #4fc2cd; */
 }
 
 a {
@@ -1891,8 +1892,8 @@ input[type="radio"]:checked+label:before {
 
 input[type="checkbox"]:focus+label:before,
 input[type="radio"]:focus+label:before {
-    border-color: #4fc2cd;
-    box-shadow: 0 0 0 1px #4fc2cd;
+    border-color: var(--special-color);
+    box-shadow: 0 0 0 1px var(--special-color);
 }
 
 input[type="checkbox"]+label:before {
@@ -2382,7 +2383,7 @@ input[type="submit"].special,
 input[type="reset"].special,
 input[type="button"].special,
 .button.special {
-    background-color: #4fc2cd;
+    background-color: var(--special-color);
     color: #ffffff !important;
 }
 
@@ -3419,7 +3420,7 @@ body.is-touch .poptrox-popup .closer {
         color: #616161 !important;
         display: block;
         font-size: 0.8em;
-        height: 4em;
+        /*height: 4em;*/
         letter-spacing: 0.11em;
         line-height: 4em;
         text-decoration: none;
@@ -3618,4 +3619,49 @@ body.is-touch .poptrox-popup .closer {
 
 h1#title {
     left: 5em;
+}
+
+.thanks {
+    color: var(--special-color);
+}
+
+.button.error,
+button.error {
+    background-color: red;
+    color: #ffffff !important;
+}
+
+.error {
+    color: red;
+}
+
+@media screen and (max-width: 900px) {
+    #header nav>ul>li {
+        margin-left: 1em;
+    }
+    #header.alt nav li {
+        margin: 0 1em;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    #header.alt nav li {
+        margin: 0 .5em;
+    }
+    .optional {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    #header nav>ul>li {
+        margin-left: .45em;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .title img {
+        width: 2.5em;
+        margin-top: 2px;
+    }
 }

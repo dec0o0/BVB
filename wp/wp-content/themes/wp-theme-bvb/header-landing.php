@@ -15,15 +15,13 @@
     <meta name="description" content="Site-ul bisericii Biserica Vestea Buna din Bucuresti" />
     <meta name="keywords" content="biserica, vestea, buna, vestea buna, bucuresti, penticostal, crestin, schimbare" />
     <meta name="author" content="Vestea Buna" />
-    <script>document.documentElement.className="js ";var supportsCssVars=function(){var e,t=document.createElement("style ");return t.innerHTML="root: { --tmp-var: bold; }
-        ",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight ","var(--tmp-var) ")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables. ");</script>
 </head>
 
 <body class="landing">
 
     <!-- Header -->
     <div id="header" class="alt">
-        <h1 id="logo"><a href="index.html">Biserica Vestea bună București</a></h1>
+        <h1 id="logo"><a href="index.html">Biserica <span class="optional">Penticostală</span> Vestea bună București</a></h1>
         <p>"Nu te lăsa biruit de rău ci biruiește răul prin bine"</p>
         <nav id="nav">
         <ul>
@@ -31,13 +29,13 @@
                 <li><a href="<?php echo home_url(); ?>/blog">Articole</a></li>
                 <li><a href="<?php echo home_url(); ?>/consiliere">Consiliere</a></li>
                 <li>
-                <a href="<?php echo home_url(); ?>/viziune">Biserica locală</a>
+                <a href="<?php echo home_url(); ?>/viziune">Biserica locală <span class="icon fa-caret-down"></span></a>
                     <ul>
                         <li><a href="<?php echo home_url(); ?>/istoric">Istoric</a></li>
                         <li><a href="<?php echo home_url(); ?>/viziune">Viziune</a></li>
                         <li><a href="<?php echo home_url(); ?>/conducere">Conducere</a></li>
                         <li>
-                            <a href="<?php echo home_url(); ?>/departamente">Departamente</a>
+                            <a href="<?php echo home_url(); ?>/departamente">Departamente <span class="icon fa-caret-down"></span></a>
                             <ul>
                                 <li><a href="<?php echo home_url(); ?>/departamente">Prezentare generală</a></li>
                                 <li><a href="<?php echo home_url(); ?>/inchinare">Închinare</a></li>
@@ -49,9 +47,9 @@
                     </ul>
                 </li>
                 <li><a href="<?php echo home_url(); ?>/contact">Contact</a></li>
-                <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg" target="_blank" class="button special">Transmisie live</a>
+                <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg" target="_blank" class="button special icon fa-video-camera">Transmisie live</a>
                 <ul>
-                        <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg/videos">Arhivă video</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg/videos"><span class="icon fa-archive"></span> Arhivă video</a></li>
                     </ul>
                 </li>
             </ul>

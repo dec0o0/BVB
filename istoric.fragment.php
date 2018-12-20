@@ -30,11 +30,16 @@
 
       <div class="5u$ 12u$(medium)">
         <section id="sidebar">
-            <a href="[asset url='images/vamvu.jpg']" class="image fit">
-              <img src="[asset url='images/vamvu.jpg']" />
+            <a href="[asset url='images/alexie_vamvu_istoric.jpg']" class="image fit">
+              <img src="[asset url='images/alexie_vamvu_istoric.jpg']" />
             </a>
-            <div class="imgTag">Alexie Vamvu (prima persoană din primul rând) în 1974, alături de cursanții și profesorii primului curs teologic penticostal. <br/> Pentru mai multe detalii, click <a href="https://istoriepenticostala.wordpress.com/page/2/">aici</a>.
+            <div class="imgTag">Alexie Vamvu (prima persoană din primul rând) în 1974, alături de cursanții și profesorii primului curs teologic penticostal. Pentru mai multe detalii, click <a href="https://istoriepenticostala.wordpress.com/page/2/">aici</a>.
               </div>
+              <hr/>
+              <a href="[asset url='images/vasile_roske_istoric.jpg']" class="image fit">
+              <img src="[asset url='images/vasile_roske_istoric.jpg']" />
+            </a>
+            <div class="imgTag">Pastor Vasile Roske, în timpul unei cuvântări.</div>
         </section>
       </div>
   </div>

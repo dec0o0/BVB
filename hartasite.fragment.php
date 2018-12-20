@@ -2,20 +2,13 @@
     <div class="container">
         <header class="major">
             <h2>Harta site-ului</h2>
-            <p>Și structura paginilor componente</p>
+            <p>Până la urmă, toți avem nevoie de hărți în viețile noastre</p>
         </header>
 
       <div class="row 200%">
         <div class="4u 12u$(medium)">
-
-         <section id="sidebar">
-            <img src="[asset url='images/structura.png']" class="image fit"/>
-           </section>
-        </div>
-
-
-					<div class="8u$ 12u$(medium) important(medium)">
-            <section id="content">
+         
+        <section id="content">
                 <ul>
                   <li>[link href="" text="Pagina de start"]</li>
                   <li>[link href="anunturi" text="Anunțuri"]</li>
@@ -45,7 +38,16 @@
                   </li>
             </ul>
 
-            </section></div>
+            </section>
+        </div>
+
+
+					<div class="8u$ 12u$(medium) important(medium)">
+                    <section id="sidebar">
+            <img src="[asset url='images/busola.jpg']" class="image fit"/>
+           </section>
+           
+            </div>
 
         </div>
     </div>

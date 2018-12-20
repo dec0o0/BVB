@@ -23,3 +23,12 @@ function linkTo($atts) {
 }
 
 add_shortcode('link', 'linkTo');
+
+function getRelativeHrefOf($atts) {
+	extract( shortcode_atts(
+		array('path' => '')
+	));
+	return home_url() . "/" . $path;
+}
+
+add_shortcode('pathOf', 'getRelativeHrefOf');
