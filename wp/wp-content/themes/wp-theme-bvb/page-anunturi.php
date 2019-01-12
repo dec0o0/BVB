@@ -21,7 +21,7 @@ $q = new WP_Query($args); ?>
     <div class="container">
         <header class="major">
             <h2>Anunțuri</h2>
-            <p>Și evenimente</p>
+            <p>Și alte resurse</p>
         </header>
 </div></section>
 <section id="one">
@@ -36,7 +36,7 @@ $q = new WP_Query($args); ?>
                     <div class="8u 12u$(medium)">
                         <header class="major">
                             <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
-                            <p><i class="icon fa-pencil"></i> De <?php the_author(); ?>, în <?php the_date(); ?></p>
+                            <p><i class="icon fa-pencil"></i> Adăugat de <?php the_author(); ?>, în data de <?php the_time('j F, Y'); ?></p>
      </header>
                         <p><?php the_excerpt();?></p>
                         <ul class="actions">
@@ -45,7 +45,7 @@ $q = new WP_Query($args); ?>
                     </div>
                     <div class="4u$ 12u$(medium) important(medium)">
                         <span class="image fit rounded">
-									<img src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="" />
+									<img src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="<?php the_title(); ?>" />
 								</span>
                     </div>
                 </div>

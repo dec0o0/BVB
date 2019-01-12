@@ -132,7 +132,12 @@ section {
 
 body {
     line-height: 1;
-    --special-color: #4fc2cd;
+    --special-color: rgb(231, 2, 2);
+    --special-color-hover: rgb(211, 3, 3);
+    --special-color-active: rgb(211, 3, 3);
+    --special-color-bvb: #103461;
+    --special-color-bvb-hover: #1f5ba3;
+    --special-color-bvb-active: #1f5ba3;
     /* #103461; */
     /* #4fc2cd; */
 }
@@ -2391,14 +2396,36 @@ input[type="submit"].special:hover,
 input[type="reset"].special:hover,
 input[type="button"].special:hover,
 .button.special:hover {
-    background-color: #5cc7d1;
+    background-color: var(--special-color-hover);
 }
 
 input[type="submit"].special:active,
 input[type="reset"].special:active,
 input[type="button"].special:active,
 .button.special:active {
-    background-color: #3bbbc7;
+    background-color: var(--special-color-active);
+}
+
+input[type="submit"].specialBvb,
+input[type="reset"].specialBvb,
+input[type="button"].specialBvb,
+.button.specialBvb {
+    background-color: var(--special-color-bvb);
+    color: #ffffff !important;
+}
+
+input[type="submit"].specialBvb:hover,
+input[type="reset"].specialBvb:hover,
+input[type="button"].specialBvb:hover,
+.button.specialBvb:hover {
+    background-color: var(--special-color-bvb-hover);
+}
+
+input[type="submit"].specialBvb:active,
+input[type="reset"].specialBvb:active,
+input[type="button"].specialBvb:active,
+.button.specialBvb:active {
+    background-color: var(--special-color-bvb-active);
 }
 
 input[type="submit"].disabled,
@@ -3644,7 +3671,7 @@ button.error {
     }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 870px) {
     #header.alt nav li {
         margin: 0 .5em;
     }

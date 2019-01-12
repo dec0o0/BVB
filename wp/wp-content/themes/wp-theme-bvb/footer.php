@@ -14,7 +14,7 @@
                     <ul class="labeled-icons">
                     <li>
                             <h4 class="icon fa-sitemap"><span class="label">Email</span></h4>
-                            <a href="<?php echo home_url(); ?>/hartasite">Hartă site</a>
+                            <a href="<?php echo home_url(); ?>/harta-site">Hartă site</a>
                         </li>
                     <li>
                             <h4 class="icon fa-phone"><span class="label">Phone</span></h4>

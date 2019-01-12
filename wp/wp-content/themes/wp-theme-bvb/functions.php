@@ -16,10 +16,12 @@ function linkTo($atts) {
 	extract( shortcode_atts(
 		array(
 				'href' => "",
-				'text' => ""
+				'text' => "",
+				'class' => "",
+				'style' => ""
 		), $atts )
 );
-	return '<a href="' . home_url() . "/" . $href . '">' . $text . '</a>';
+	return '<a href="' . home_url() . "/" . $href . '" class="' . $class . '" style="' . $style . '">' . $text . '</a>';
 }
 
 add_shortcode('link', 'linkTo');

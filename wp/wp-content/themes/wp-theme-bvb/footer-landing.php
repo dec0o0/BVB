@@ -9,6 +9,10 @@
                         <h3>Detalii contact</h3>
                     </header>
                     <ul class="labeled-icons">
+                        <li style="font-weight: bold;">
+                            <h4 class="icon fa-home"><span class="label">Adresă</span></h4>
+                            Str. Popa Nan nr. 106, <br/> București, sector 2, 030167
+                        </li>
                         <li>
                             <h4 class="icon fa-envelope"><span class="label">Email</span></h4>
                             <a href="mailto:contact@bisericavesteabuna.ro?Subject=">contact@bisericavesteabuna.ro</a>
@@ -20,10 +24,6 @@
                         <li>
                             <h4 class="icon fa-phone"><span class="label">Telefon</span></h4>
                             Pastor Adrian Jurj<br/>(+40) 743 595 146
-                        </li>
-                        <li>
-                            <h4 class="icon fa-home"><span class="label">Adresă</span></h4>
-                            Str. Popa Nan nr. 106, <br/> București, sector 2, 030167
                         </li>
                         <li>
                             <h4 class="icon fa-facebook"><span class="label">Facebook</span></h4>

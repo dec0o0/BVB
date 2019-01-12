@@ -21,7 +21,7 @@ while($q->have_posts()) {
     $slidePics[$i] = get_the_post_thumbnail_url(get_the_ID(),'full');
     $slideUrls[$i] = get_permalink();
     $slideTitles[$i] = get_the_title();
-    $slideSummary[$i++] = get_the_excerpt();
+    $slideSummary[$i++] = get_the_content();
 }
 $currentUrl = get_template_directory_uri();
 ?>
@@ -37,9 +37,9 @@ $currentUrl = get_template_directory_uri();
                     <div class="slide">
                 <?php } ?>
                 <div class="slide__img" style="background-image: url(<?php echo $currentUrl . '/assets/css/images/overlay.png' ?>), url(<?php echo $slidePics[$i] ?>)"></div>
-                <h2 class="slide__title"><?php echo $slideTitles[$i] ?></h2>
+                <h3 class="slide__title"><?php echo $slideTitles[$i] ?></h3>
                 <p class="slide__desc"><?php echo $slideSummary[$i] ?></p>
-                <a class="slide__link" href="<?php echo $slideUrls[$i] ?>">Deschide</a>
+                <a class="slide__link hidden" href="<?php echo $slideUrls[$i] ?>">Deschide</a>
             </div>
                 <?php
             } ?>
@@ -50,17 +50,21 @@ $currentUrl = get_template_directory_uri();
 					<button class="slidenav__item slidenav__item--next">Următorul <span class="icon fa-chevron-right"></span></button>
 				</nav>
         </div>
-        
-    <section id="one" class="wrapper style1">
-        <div class="container">
-            <div class="row">
-                <div class="3u 6u(large) 12u$(medium)">
-                    <button class="button alt small fit icon fa-clock-o" onclick="scheduleChange('s')">Programul săptămânal</a>
-                </div>
-                <div class="3u 6u(large) 12u$(medium)">
-                    <button class="button alt small fit icon fa-calendar" onclick="scheduleChange('l')">Programul lunar</a>
-                </div>
-            </div>
+    
+        <section id="four " class="wrapper style1 special ">
+        <div class="container ">
+            <header class="major ">
+                <h2>Vă spunem un călduros bun venit!</h2>
+                <p>Pe site-ul bisericii lui Isus Hristos „Vestea Bună” din Bucureşti</p>
+            </header>
+            <p>Vă suntem alături prin intermediul serviciilor divine redate în flux live, împreună cu alte informaţii utile ce vizează biserica noastră. 
+De asemenea, oferim și servicii de consiliere creştină, alături de suportul social necesar.
+Vă aşteptăm să participaţi alături de noi la părtăşia spirituală a bisericii „Vestea Bună”:
+duminica dimineaţa 10.00 – 12.00 apoi după-amiază  18.00 – 20.00. </p>
+            <ul class="actions ">
+                <li><button class="button specialBvb icon fa-clock-o" onclick="scheduleChange('s')">Programul săptămânal</a></li>
+                <li><button class="button alt icon fa-calendar" onclick="scheduleChange('l')">Programul lunar</a></li>
+            </ul>
             <div class="table-wrapper hidden" id="programSaptamanal">
                 <br/>
                 <table>
@@ -160,7 +164,7 @@ $q = new WP_Query($args);
                     <div class="8u 12u$(medium)">
                         <header class="major">
                             <h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
-                            <p>Anunț adăugat de <?php the_author();?>, în data de <?php the_date();?>.</p>
+                            <p>Resursă adăugată de <?php the_author();?>, în data de <?php the_time('j F, Y');?>.</p>
                         </header>
                         <p><?php the_excerpt();?></p>
                         <ul class="actions">
@@ -185,7 +189,7 @@ $q = new WP_Query($args);
                     <div class="8u$ 12u$(medium)">
                         <header class="major">
                             <h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
-                            <p>Ultimul articol, adăugat în data de <?php the_date();?></p>
+                            <p>Resursă adăugată de <?php the_author();?>, în data de <?php the_time('j F, Y');?>.</p>
                         </header>
                         <p><?php the_excerpt();?></p>
                         <ul class="actions">

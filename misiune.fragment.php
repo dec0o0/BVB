@@ -10,7 +10,7 @@
                 <!-- Sidebar -->
                 <section id="sidebar">
                     <section>
-                        <a href="https://apme.ro" target="_blank" class="image fit"><img src="[asset url='images/_/grain.jpg']" alt="" /></a>
+                        <a href="https://apme.ro" target="_blank" class="image fit"><img src="[asset url='images/_/grain.jpg']" alt="Recolta misiunea bisericii crestine Vestea buna Bucuresti" /></a>
                     </section>
                 </section>
             </div>
@@ -63,7 +63,7 @@
                     <p><i>Kairos</i> reprezintă și vremea potrivită sau prilejul oportun de vestire a Evangheliei de către Biserică, în general, și de fiecare credincios, în particular. </p>
                     <p>Răscumpărați vremea este imperativul transmis de Apostolul Pavel credincioșilor din Efes (Efeseni 5.16). Există o vreme potrivită în care Evanghelia trebuie vestită oamenilor. Irosirea acelui timp oportun poate însemna pierderea prilejului
                         mântuirii și a șansei oamenilor de a fi mântuiți. </p>
-                    <p>Noi, Biserica secolului XXI suntem responsabili de a propovădui Evanghelia acestei generați contemporane nouă. </p>
+                    <p>Noi, Biserica secolului XXI suntem responsabili de a propovădui Evanghelia acestei generații contemporane. </p>
                     <p>Natura trecătoare a vieții, încercările disperate ale vrășmașului de a-i ține pe oameni departe de auzirea Evangheliei mântuirii și vremea revenirii iminente a lui Hristos sunt factorii care ne determină să nu irosim nici o ocazie,
                         ci să vestim Evanghelia celor din generația noastră.
                     </p>

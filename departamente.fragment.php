@@ -12,7 +12,7 @@
                     <!-- Sidebar -->
                     <section id="sidebar">
                         <section>
-                            <div class="image fit"><img src="[asset url='/images/cruci.jpg']" /></div>
+                            <div class="image fit"><img src="[asset url='/images/cruci.jpg']" alt="Crucificare Isus Hristos"/></div>
                         </section>
                     </section>
 

@@ -1,3 +1,12 @@
+<?php 
+/* Template Name: Generic */
+get_header(); 
+
+if ( have_posts() ) : while ( have_posts() ) : the_post();
+/*
+the_content();
+*/
+?>
 <section id="main">
     <div class="container">
         <header class="major">
@@ -12,10 +21,6 @@
                 <div class="4u 12u$(medium) important(medium)">
                     <ul class="labeled-icons">
                         <li>
-                            <h4 class="icon fa-envelope"><span class="label">Email</span></h4>
-                            <a href="mailto:contact@bisericavesteabuna.ro?Subject=">contact@bisericavesteabuna.ro</a>
-                        </li>
-                        <li>
                             <h4 class="icon fa-phone"><span class="label">Telefon</span></h4>
                             Pastor Emil Meștereagă<br/>(+40) 732 672 704
                         </li>
@@ -26,6 +31,10 @@
                         <li>
                             <h4 class="icon fa-home"><span class="label">Adresă</span></h4>
                             Str. Popa Nan nr. 106, <br/> București, sector 2, 030167
+                        </li>
+                        <li>
+                            <h4 class="icon fa-envelope"><span class="label">Email</span></h4>
+                            <a href="mailto:contact@bisericavesteabuna.ro?Subject=">contact@bisericavesteabuna.ro</a>
                         </li>
                         <li>
                             <h4 class="icon fa-facebook"><span class="label">Facebook</span></h4>
@@ -41,50 +50,26 @@
                     <div class="map-responsive">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.0729410075946!2d26.12364131531884!3d44.43166597910234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff264e1706bf%3A0xabc547def6e972de!2sBiserica+Vestea+Buna!5e0!3m2!1sen!2sro!4v1543089718464" width="600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
-                    <p>Cea mai aproapiată stație STB este Universitatea Hyperion, iar ce-a mai aproapiată stație de metrou este Piața Muncii.</p>
+                    <p>Cea mai aproapiată stație STB este Universitatea Hyperion, iar cea mai aproapiată stație de metrou este Piața Muncii.</p>
 
                 </div>
             </div>
             <hr/>
-            <div>
-                <p>Te rugăm folosește fără rezerve acest formular pentru a ne trimite un mesaj. Încercăm să fim cât se poate de prompți în a răspunde mesajelor.</p>
-            <form action="[pathOf path='contact']" id="contactForm" method="post">
-                    <div class="row uniform 50%">
-                        <div class="6u 12u$(small)">
-                            <input type="text" name="name" id="name" value="" placeholder="Nume">
-                        </div>
-                        <div class="6u$ 12u$(small)">
-                            <input type="text" name="prenume" id="prenume" value="" placeholder="Prenume">
-                        </div>
-                        <div class="6u 12u$(large)">
-                            <input type="email" name="email" id="email" value="" placeholder="Email">
-                        </div>
-
-                        <div class="6u 12u$(small)">
-                            <input type="checkbox" id="copy" name="copy">
-                            <label for="copy">Trimite-mi o copie a mesajului</label>
-                        </div>
-
-                        <div class="6u 12u$(small)">
-                            <input type="checkbox" id="real" name="real">
-                            <label for="copy">Sunt o persoană reală, nu un robot</label>
-                        </div>
-
-                        <div class="12u$">
-                            <textarea name="message" id="message" placeholder="Scrie aici mesajul tău" rows="7"></textarea>
-                        </div>
-                        <div class="12u$">
-                            <ul class="actions">
-                                <li><input type="submit" value="Trimite" class="special"></li>
-                                <li><input type="reset" value="Resetează câmpurile"></li>
-                            </ul>
-                        </div>
+            <div class="row 200%">
+            <div class="4u 12u$(medium)">
+            <p>Pentru a ne trimite un mesaj, folosește fără rezerve formularul alăturat. <br/>Încercăm să răspundem pe cât se poate de prompt.</p>
                     </div>
-
-                    <input type="hidden" name="submitted" id="submitted" value="true" />w
-                </form>
-            </div>
+                    <div class="8u$ 12u$(medium)">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlA85TYfVjJRgZF4FNU_R2O0wKPjf5Zq5sU0mKthJJTOdh-w/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Se încarcă...</iframe>
+                    </div>
+                    </div>
         </div>
     </section>
 </div>
 </section>
+
+<?php
+endwhile;
+endif;
+get_sidebar();
+get_footer('contact'); ?>

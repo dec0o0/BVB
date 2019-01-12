@@ -60,7 +60,7 @@ the_content();
             <p>Pentru a ne trimite un mesaj, folosește fără rezerve formularul alăturat. <br/>Încercăm să răspundem pe cât se poate de prompt.</p>
                     </div>
                     <div class="8u$ 12u$(medium)">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlA85TYfVjJRgZF4FNU_R2O0wKPjf5Zq5sU0mKthJJTOdh-w/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Se încarcă...</iframe>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfupA31lFJacsyYGuoDPVRZ5qla07yKE9er6_IzdUOK5__PXQ/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Se încarcă formularul ...</iframe>
                     </div>
                     </div>
         </div>

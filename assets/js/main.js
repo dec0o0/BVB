@@ -170,10 +170,20 @@
 
 function scheduleChange(control) {
     if (control == 's') {
-        $("#programSaptamanal").removeClass("hidden");
+        var pS = $("#programSaptamanal");
+        if (ps.hasClass("hidden")) {
+            ps.removeClass("hidden");
+        } else {
+            ps.addClass("hidden");
+        }
         $("#programLunar").removeClass("hidden").addClass("hidden")
     } else {
         $("#programSaptamanal").removeClass("hidden").addClass("hidden");
-        $("#programLunar").removeClass("hidden");
+        var pL = $("#programLunar");
+        if (pL.hasClass("hidden")) {
+            pL.removeClass("hidden");
+        } else {
+            pL.addClass("hidden");
+        }
     }
 }

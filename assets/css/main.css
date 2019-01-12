@@ -2372,13 +2372,28 @@ input[type="submit"].special,
 input[type="reset"].special,
 input[type="button"].special,
 .button.special {
-    background-color: #4fc2cd;
+    background-color: var(--special-hover);
     color: #ffffff !important;
 }
 
 input[type="submit"].special:hover,
 input[type="reset"].special:hover,
 input[type="button"].special:hover,
+.button.special:hover {
+    background-color: #5cc7d1;
+}
+
+input[type="submit"].specialBvb,
+input[type="reset"].specialBvb,
+input[type="button"].specialBvb,
+.button.specialBvb {
+    background-color: #4fc2cd;
+    color: #ffffff !important;
+}
+
+input[type="submit"].specialBvb:hover,
+input[type="reset"].specialBvb:hover,
+input[type="button"].specialBvb:hover,
 .button.special:hover {
     background-color: #5cc7d1;
 }

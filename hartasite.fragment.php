@@ -2,7 +2,7 @@
     <div class="container">
         <header class="major">
             <h2>Harta site-ului</h2>
-            <p>Până la urmă, toți avem nevoie de hărți în viețile noastre</p>
+            <p>Până la urmă, noi toți avem nevoie de hărți câteodată</p>
         </header>
 
       <div class="row 200%">
@@ -12,14 +12,16 @@
                 <ul>
                   <li>[link href="" text="Pagina de start"]</li>
                   <li>[link href="anunturi" text="Anunțuri"]</li>
-                  <li>[link href="blog" text="Articole"]</li>
+                  <!--<li>[link href="blog" text="Articole"]</li>-->
                   <li>[link href="consiliere" text="Consiliere"]</li>
                   <li>[link href="viziune" text="Biserica locală"]
                       <ul>
                           <li>[link href="istoric" text="Istoric"]</li>
                           <li>[link href="viziune" text="Viziune"]</li>
                           <li>[link href="conducere" text="Conducere"]</li>
-                          <li>[link href="departamente" text="Departamente"]
+                      </ul>
+                  </li>
+                  <li>[link href="departamente" text="Departamente"]
                               <ul>
                                   <li>[link href="departamente" text="Prezentare generală"]</li>
                                   <li>[link href="inchinare" text="Închinare"]</li>
@@ -28,8 +30,6 @@
                                   <li>[link href="tineret" text="Copii, adolescenți, tineret"]</li>
                               </ul>
                           </li>
-                      </ul>
-                  </li>
                   <li>[link href="contact" text="Contact"]</li>
                   <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg" target="_blank">Transmisie live</a>
                   <ul>
@@ -40,11 +40,9 @@
 
             </section>
         </div>
-
-
 					<div class="8u$ 12u$(medium) important(medium)">
                     <section id="sidebar">
-            <img src="[asset url='images/busola.jpg']" class="image fit"/>
+            <img src="[asset url='images/busola.jpg']" class="image fit" alt="Busola pentru orientare"/>
            </section>
            
             </div>

@@ -9,7 +9,7 @@
             <div class="2u 12u$(medium)">
                 <!-- Sidebar -->
                 <section id="sidebar">
-                    <img class="image fit withPadding" src="[asset url='images/mission1.svg']" />
+                    <img class="image fit withPadding" src="[asset url='images/mission1.svg']" alt="Misiune munte etapa 1"/>
                 </section>
             </div>
             <div class="10u$ 12u$(medium) important(medium)">
@@ -21,7 +21,7 @@
             <div class="2u 12u$(medium)">
                 <!-- Sidebar -->
                 <section id="sidebar">
-                    <img class="image fit withPadding" src="[asset url='images/mission2.svg']" />
+                    <img class="image fit withPadding" src="[asset url='images/mission2.svg']" alt="Misiune munte etapa 2"/>
                 </section>
             </div>
             <div class="10u$ 12u$(medium) important(medium)">
@@ -37,7 +37,7 @@
             <div class="2u 12u$(medium)">
                 <!-- Sidebar -->
                 <section id="sidebar">
-                    <img class="image fit withPadding" src="[asset url='images/mission3.svg']" />
+                    <img class="image fit withPadding" src="[asset url='images/mission3.svg']" alt="Misiune munte etapa 3"/>
                 </section>
             </div>
             <div class="10u$ 12u$(medium) important(medium)">

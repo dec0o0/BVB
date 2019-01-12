@@ -31,7 +31,7 @@
     <nav id="nav">
             <ul>
             <li><a href="<?php echo home_url(); ?>/anunturi">Anunțuri</a></li>
-                <li><a href="<?php echo home_url(); ?>/blog">Articole</a></li>
+                <!--<li><a href="<?php //echo home_url(); ?>/blog">Articole</a></li>-->
                 <li><a href="<?php echo home_url(); ?>/consiliere">Consiliere</a></li>
                 <li>
                     <a href="<?php echo home_url(); ?>/viziune">Biserica locală <span class="icon fa-caret-down"></span></a>
@@ -39,22 +39,22 @@
                         <li><a href="<?php echo home_url(); ?>/istoric">Istoric</a></li>
                         <li><a href="<?php echo home_url(); ?>/viziune">Viziune</a></li>
                         <li><a href="<?php echo home_url(); ?>/conducere">Conducere</a></li>
-                        <li>
-                            <a href="<?php echo home_url(); ?>/departamente">Departamente <span class="icon fa-caret-down"></span></a>
-                            <ul>
-                                <li><a href="<?php echo home_url(); ?>/departamente">Prezentare generală</a></li>
-                                <li><a href="<?php echo home_url(); ?>/inchinare">Închinare</a></li>
-                                <li><a href="<?php echo home_url(); ?>/misiune">Misiune & evanghelizare</a></li>
-                                <li><a href="<?php echo home_url(); ?>/social">Acțiuni sociale</a></li>
-                                <li><a href="<?php echo home_url(); ?>/tineret">Copii, adolescenți, tineret</a></li>
-                            </ul>
-                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="<?php echo home_url(); ?>/departamente">Departamente <span class="icon fa-caret-down"></span></a>
+                    <ul>
+                        <li><a href="<?php echo home_url(); ?>/departamente">Prezentare generală</a></li>
+                        <li><a href="<?php echo home_url(); ?>/inchinare">Închinare</a></li>
+                        <li><a href="<?php echo home_url(); ?>/misiune">Misiune & evanghelizare</a></li>
+                        <li><a href="<?php echo home_url(); ?>/social">Acțiuni sociale</a></li>
+                        <li><a href="<?php echo home_url(); ?>/tineret">Copii, adolescenți, tineret</a></li>
                     </ul>
                 </li>
                 <li><a href="<?php echo home_url(); ?>/contact">Contact</a></li>
                 <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg" target="_blank" class="button alt">Transmisie live</a>
                 <ul>
-                        <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg/videos"><span class="icon fa-archive"></span> Arhivă video</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCEP7EO7Fso88QlA1A0YfuJg/videos" target="_blank" style="text-align:center;"><span class="icon fa-archive"></span> Arhivă video</a></li>
                     </ul>
                 </li>
                 <li><a href="" id="friendlyRead" class="icon fa-toggle-off normalSized"></a>
