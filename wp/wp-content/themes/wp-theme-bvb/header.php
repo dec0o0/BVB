@@ -22,7 +22,7 @@
 
 <h1 id="logo">
     <a href="<?php echo home_url(); ?>">
-        <img class="img fit small" src="<?php echo get_template_directory_uri() . '/assets/images/logo_piccolo.png' ?>"/>
+        <img class="img fit small" src="<?php echo get_template_directory_uri() . '/assets/images/logo_piccolo.png' ?>"/> 
     </a>
 </h1>
     <h1 id="title">

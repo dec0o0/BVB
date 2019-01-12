@@ -29,13 +29,13 @@
                         </ul>
                         <h4>A. Departamente</h4>
                         <header>
-                            <h5> Departamentul de închinare</h5>
+                            <h5>[link href="inchinare" text="Departamentul de închinare"]</h5>
                             <p> Lider senior: Daniel Epure</p>
-                            <h5> Departamentul de misiune/evanghelizare</h5>
+                            <h5>[link href="misiune" text="Departamentul de misiune & evanghelizare"]</h5>
                             <p> Lider senior: Pastor Emil Meștereagă</p>
-                            <h5> Departamenul de acțiuni sociale</h5>
+                            <h5>[link href="social" text="Departamenul de acțiuni sociale"]</h5>
                             <p> Lider senior: Pastor Adrian Jurj</p>
-                            <h5> Departamentul de copii, adolescenți și tineret</h5>
+                            <h5>[link href="tineret" text="Departamentul de copii, adolescenți și tineret"]</h5>
                             <p style="margin-bottom:0px;"> Lider senior: Diacon Alin Pănican</p>
                             <p style="font-size: 0.9em">Lider secund: Andy Eduard Piftor</p>
                         </header>

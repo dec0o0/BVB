@@ -61,7 +61,7 @@
                             <h4>Adrian Jurj</h4>
                             <p>Pastor asistent</p>
                         </header>
-                    </div>
+                    </div></div><div class="row 50% uniform">
                     <div class="3u">
                         <span class="image fit"><img src="[asset url='/images/conducere/dragos_stefanica.jpeg']" alt="Prezbiter Dragos Stefanica"></span>
                         <header>
@@ -89,7 +89,7 @@
                             <h4>Nicolae Văduva</h4>
                             <p>Prezbiter</p>
                         </header>
-                    </div>
+                    </div></div><div class="row 50% uniform">
                     <div class="3u">
                         <span class="image fit"><img src="[asset url='/images/thumbs/01.jpg']" alt="Diacon Cristian Dragomir"></span>
                         <header>
@@ -126,3 +126,11 @@
 
     </div>
 </section>
+
+<style>
+@media screen and (max-width: 499px) {
+    h4 {
+        font-size: .7em;
+    }
+}
+    </style>

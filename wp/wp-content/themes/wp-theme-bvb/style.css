@@ -3662,7 +3662,7 @@ button.error {
     color: red;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 970px) {
     #header nav>ul>li {
         margin-left: 1em;
     }
@@ -3671,7 +3671,7 @@ button.error {
     }
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 900px) {
     #header.alt nav li {
         margin: 0 .5em;
     }
@@ -3680,7 +3680,7 @@ button.error {
     }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 850px) {
     #header nav>ul>li {
         margin-left: .45em;
     }
@@ -3690,5 +3690,8 @@ button.error {
     .title img {
         width: 2.5em;
         margin-top: 2px;
+    }
+    .optional {
+        display: inline-block;
     }
 }

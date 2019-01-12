@@ -9,7 +9,6 @@
  * http://www.codrops.com
  */
 {
-    const SLIDESHOW_INTERVAL = 7500;
     // From https://davidwalsh.name/javascript-debounce-function.
     function debounce(func, wait, immediate) {
         var timeout;
@@ -190,7 +189,7 @@
     var autoplayRegistration;
 
     function playSlideshow() {
-        autoplayRegistration = window.setInterval(autoplaySlideshow, SLIDESHOW_INTERVAL);
+        autoplayRegistration = window.setInterval(autoplaySlideshow, 6500);
     }
 
     function stopSlideshow() {
